@@ -14,16 +14,16 @@ public class KeyPre {
     /**
      * 电视直播列表
      */
-    public static final String KEY_LIVETV = "key:service:livetv:";
+    public static final String KEY_LIVETV = "key:web:livetv:";
 
     /**
      * vip视频解析地址
      */
-    public static final String KEY_LIVEVIP = "key:service:livevip:";
+    public static final String KEY_LIVEVIP = "key:web:livevip:";
 
     /**
      * 系统头部导航
      */
-    public static final String KEY_TOPNAV = "key:service:topnav:";
+    public static final String KEY_TOPNAV = "key:web:topnav:";
 
 }

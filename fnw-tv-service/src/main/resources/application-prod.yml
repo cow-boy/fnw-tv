@@ -4,9 +4,9 @@ server:
 spring:
   datasource:
       name: test
-      url: jdbc:mysql://rm-wz9sy:3306/fnwtv?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+      url: jdbc:mysql://rm-.com:3306/fnwtv?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false
       username: root
-      password: J
+      password: Java
       # 使用druid数据源
       type: com.alibaba.druid.pool.DruidDataSource
       driver-class-name: com.mysql.jdbc.Driver
@@ -28,7 +28,7 @@ spring:
     database: 0
     host: 39.108.
     port: 6379
-    password: Java2018
+    password: J
     pool:
       max-active: 8
     timeout: 0
@@ -38,7 +38,7 @@ spring:
   dubbo:
     application:
       name: demo-provider
-    base-package: com.tv.provider  # dubbo服务发布者所在的包
+    base-package: com.tv.service  # dubbo服务发布者所在的包
     registry:
       address: 127.0.0.1                   # zookeeper注册中心的地址
       port: 2181                           # zookeeper注册中心的端口

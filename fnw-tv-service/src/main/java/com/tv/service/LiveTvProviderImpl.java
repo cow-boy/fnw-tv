@@ -1,4 +1,4 @@
-package com.tv.provider;/**
+package com.tv.service;/**
  * Created by HUXU on 2017/10/29.
  */
 
@@ -18,6 +18,8 @@ import com.tv.provider.LiveTvProvider;
 
 import com.tv.util.FnwStr;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.alibaba.dubbo.config.annotation.Service;
@@ -35,6 +37,8 @@ import java.util.concurrent.TimeUnit;
 @Service(protocol="dubbo")
 public class LiveTvProviderImpl implements LiveTvProvider {
 
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
     @Autowired
     private CacheTemplateService cacheTemplateService;
 
@@ -44,7 +48,7 @@ public class LiveTvProviderImpl implements LiveTvProvider {
     @Override
     public Object selLiveTvList(Short liveType, Short isHot) {
 
-        /*String key = FnwStr.join(KeyPre.KEY_LIVETV, liveType, Const.COLON, isHot);
+        String key = FnwStr.join(KeyPre.KEY_LIVETV, liveType, Const.COLON, isHot);
         List<LiveTv> list = cacheTemplateService.findSetCache(key, 7, TimeUnit.DAYS, new TypeReference<List<LiveTv>>() {
         }, () -> {
             List<LiveTv> ltv = liveTvDao.selLiveTvList(liveType, isHot);
@@ -53,8 +57,8 @@ public class LiveTvProviderImpl implements LiveTvProvider {
                 lt.setLiveLines(lines);
             }
             return ltv;
-        });*/
-        return "hhhhhhhh";
+        });
+        return JSON.toJSON(list);
     }
 
     @Override

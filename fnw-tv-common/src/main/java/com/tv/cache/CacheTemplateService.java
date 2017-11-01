@@ -74,4 +74,32 @@ public class CacheTemplateService {
         }
     }
 
+    /**
+     * 该方法取存
+     * @param key      缓存的key
+     * @param time     缓存的失效时间值
+     * @param timeu    缓存的失效时间单位
+     * @param loadBack 缓存失效如何获取
+     * @param <T>
+     * @return
+     */
+    public <T> T findSetCacheStr(String key, Integer time, TimeUnit timeu, CacheLoadback<T> loadBack) {
+        String str = redisTemplate.opsForValue().get(key) + "";
+        if (StringUtils.isNoneEmpty(str) && !str.equalsIgnoreCase("null")) {
+            return (T) str;
+        } else {
+            synchronized (this) {
+                str = redisTemplate.opsForValue().get(key) + "";
+                if (StringUtils.isNoneEmpty(str) && !str.equalsIgnoreCase("null")) {
+                    return (T) str;
+                }
+                T result = loadBack.load();
+                if (result != null) {
+                    redisTemplate.opsForValue().set(key, result, time, timeu);
+                }
+                return result;
+            }
+        }
+    }
+
 }

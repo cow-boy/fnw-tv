@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tv.dao.SysTvDao">
+
+    <resultMap id="SysNav" type="com.tv.model.SysNav">
+        <id column="id" jdbcType="DECIMAL" property="id" />
+        <result column="nav_id" jdbcType="DECIMAL" property="navId" />
+        <result column="nav_name" jdbcType="VARCHAR" property="navName" />
+        <result column="nav_url" jdbcType="VARCHAR" property="navUrl" />
+        <result column="nav_pic" jdbcType="VARCHAR" property="navPic" />
+        <result column="nav_pid" jdbcType="DECIMAL" property="navPid" />
+        <result column="nav_sort" jdbcType="DECIMAL" property="navSort" />
+    </resultMap>
+
+    <select id="selSysNavList" resultMap="SysNav" parameterType="java.util.Map">
+        SELECT id, nav_id, nav_name, nav_url, nav_pic, nav_pid, nav_sort FROM sys_nav ORDER BY nav_sort, nav_time desc
+    </select>
+
+</mapper>

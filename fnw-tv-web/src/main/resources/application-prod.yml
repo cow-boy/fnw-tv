@@ -1,5 +1,5 @@
 server:
-    port: 8080
+    port: 8082
 #单数据源
 spring:
   #redis
@@ -25,4 +25,10 @@ spring:
       timeout: 1000
       check: true                          # 服务启动时检查被调用服务是否可用
       retries: 2
-
+  ##Caffeine Cache
+  cache:
+      type: CAFFEINE
+      cache-names:
+        - localCache
+      caffeine:
+        spec: maximumSize=500,expireAfterWrite=5s

@@ -109,16 +109,6 @@
 			<version>${joda-time.version}</version>
 		</dependency>
 
-		<!-- local cache -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-cache</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.github.ben-manes.caffeine</groupId>
-			<artifactId>caffeine</artifactId>
-		</dependency>
-
 		<!-- redis -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -168,14 +158,14 @@
 		<repository>
 			<id>Nexus</id>
 			<name>Team Nexus Repository</name>
-			<url>http://39.108.:9903/nexus/content/groups/public</url>
+			<url>http://39.:9903/nexus/content/groups/public</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>Nexus</id>
 			<name>Team Nexus Repository</name>
-			<url>http://39.108.:9903/nexus/content/groups/public</url>
+			<url>http://39.1:9903/nexus/content/groups/public</url>
 		</pluginRepository>
 	</pluginRepositories>
 
