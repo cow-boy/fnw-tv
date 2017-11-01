@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tv.dao.LiveTvDao">
+
+    <resultMap id="LiveTv" type="com.tv.model.LiveTv">
+        <id column="id" jdbcType="DECIMAL" property="id" />
+        <result column="live_type" jdbcType="DECIMAL" property="liveType" />
+        <result column="is_hot" jdbcType="DECIMAL" property="isHot" />
+        <result column="live_code" jdbcType="DECIMAL" property="liveCode" />
+        <result column="name" jdbcType="VARCHAR" property="liveName" />
+        <result column="live_pic" jdbcType="VARCHAR" property="livePic" />
+        <result column="description" jdbcType="VARCHAR" property="description" />
+        <result column="sort" jdbcType="DECIMAL" property="sort" />
+    </resultMap>
+
+    <resultMap id="LiveLine" type="com.tv.model.LiveLine">
+        <id column="id" jdbcType="DECIMAL" property="id" />
+        <result column="line" jdbcType="VARCHAR" property="line" />
+        <result column="line_time" jdbcType="TIMESTAMP" property="lineTime" />
+        <result column="sort" jdbcType="DECIMAL" property="sort" />
+    </resultMap>
+
+    <resultMap id="LiveVip" type="com.tv.model.LiveVip">
+        <id column="id" jdbcType="DECIMAL" property="id" />
+        <result column="vip_url" jdbcType="VARCHAR" property="vipUrl" />
+        <result column="vip_desc" jdbcType="VARCHAR" property="vipDesc" />
+        <result column="vip_sort" jdbcType="DECIMAL" property="vipSort" />
+    </resultMap>
+
+    <select id="selLiveTvList" resultMap="LiveTv" parameterType="java.util.Map">
+        SELECT t1.id, t1.live_type, t1.is_hot, t1.live_code, t1.live_pic, t1.description, t1.sort, t2.name FROM tv_live t1
+        LEFT JOIN tv_dic t2 ON t1.live_code = t2.id
+        WHERE t1.live_show = 0
+        <if test="liveType != null">
+            AND t1.live_type = #{liveType,jdbcType=DECIMAL}
+        </if>
+        <if test="isHot != null">
+            AND t1.is_hot = #{isHot,jdbcType=DECIMAL}
+        </if>
+        ORDER BY t1.sort, t1.live_time
+    </select>
+
+    <select id="selLiveLine" resultMap="LiveLine" parameterType="java.util.Map">
+        SELECT id, line, line_time, sort FROM tv_line
+        WHERE line_show = 0 AND pid = #{id,jdbcType=DECIMAL}
+        ORDER BY sort, line_time
+    </select>
+
+    <select id="selLiveVipList" resultMap="LiveVip" parameterType="java.util.Map">
+        SELECT id, vip_url, vip_desc, vip_sort FROM tv_vip
+        WHERE vip_show = 0
+        ORDER BY vip_sort
+    </select>
+
+</mapper>

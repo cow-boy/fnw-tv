@@ -1,0 +1,54 @@
+server:
+    port: 8081
+#单数据源
+spring:
+  datasource:
+      name: test
+      url: jdbc:mysql://rm-wz9sy:3306/fnwtv?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+      username: root
+      password: J
+      # 使用druid数据源
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+  #redis
+  redis:
+    database: 0
+    host: 39.108.
+    port: 6379
+    password: Java2018
+    pool:
+      max-active: 8
+    timeout: 0
+  session:
+    store-type: none
+  ## Dubbo 服务提供者配置
+  dubbo:
+    application:
+      name: demo-provider
+    base-package: com.tv.provider  # dubbo服务发布者所在的包
+    registry:
+      address: 127.0.0.1                   # zookeeper注册中心的地址
+      port: 2181                           # zookeeper注册中心的端口
+    protocol:
+      name: dubbo
+      serialization: hessian2
+    provider:
+      retries: 0
+
+#mybatis配置
+mybatis:
+  typeAliasesPackage: com.tv.model
+  mapper-locations: classpath:mapper/*.xml
