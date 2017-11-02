@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tv.dao.MovieDao">
+
+    <resultMap id="Movie" type="com.tv.model.Movie">
+        <id column="id" jdbcType="DECIMAL" property="id" />
+        <result column="source" jdbcType="DECIMAL" property="source" />
+        <result column="type" jdbcType="DECIMAL" property="type" />
+        <result column="line" jdbcType="VARCHAR" property="line" />
+        <result column="code" jdbcType="DECIMAL" property="code" />
+        <result column="translation" jdbcType="VARCHAR" property="translation" />
+        <result column="title" jdbcType="VARCHAR" property="title" />
+        <result column="sub" jdbcType="VARCHAR" property="sub" />
+        <result column="age" jdbcType="VARCHAR" property="age" />
+        <result column="origin" jdbcType="VARCHAR" property="origin" />
+        <result column="category" jdbcType="VARCHAR" property="category" />
+        <result column="language" jdbcType="VARCHAR" property="language" />
+        <result column="subtitle" jdbcType="VARCHAR" property="subTitle" />
+        <result column="releaseDate" jdbcType="VARCHAR" property="releaseDate" />
+        <result column="fileFormat" jdbcType="VARCHAR" property="fileFormat" />
+        <result column="videoSize" jdbcType="VARCHAR" property="videoSize" />
+        <result column="fileSize" jdbcType="VARCHAR" property="fileSize" />
+        <result column="longs" jdbcType="VARCHAR" property="longs" />
+        <result column="director" jdbcType="VARCHAR" property="director" />
+        <result column="toStar" jdbcType="VARCHAR" property="toStar" />
+        <result column="briefIntroduction" jdbcType="VARCHAR" property="briefIntroduction" />
+        <result column="pic" jdbcType="VARCHAR" property="pic" />
+        <result column="creatTime" jdbcType="VARCHAR" property="creatTime" />
+        <result column="sorts" jdbcType="DECIMAL" property="sorts" />
+    </resultMap>
+
+    <select id="selMvList" resultMap="Movie" parameterType="java.util.Map">
+        SELECT id, source, type, line, code, translation, title, sub, age, origin, category, language, subtitle, releaseDate,
+        fileFormat, videoSize, fileSize, longs, director, toStar, briefIntroduction, pic, creatTime, sorts FROM mv_list
+        WHERE isshow = 0
+        <if test="type != null">
+            AND type = #{type,jdbcType=DECIMAL}
+        </if>
+        <if test="code != null">
+            AND code = #{code,jdbcType=DECIMAL}
+        </if>
+        ORDER BY sorts, creatTime desc
+    </select>
+
+</mapper>

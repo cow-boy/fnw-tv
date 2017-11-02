@@ -7,21 +7,13 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
 import com.tv.cache.CacheTemplateService;
-import com.tv.common.Const;
 import com.tv.common.KeyPre;
-import com.tv.dao.LiveTvDao;
 import com.tv.dao.SysTvDao;
-import com.tv.model.LiveLine;
-import com.tv.model.LiveTv;
-import com.tv.model.LiveVip;
 import com.tv.model.SysNav;
-import com.tv.provider.LiveTvProvider;
 import com.tv.provider.SysTvProvider;
-import com.tv.util.FnwStr;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -47,7 +39,7 @@ public class SysTvProviderImpl implements SysTvProvider {
     @Override
     public Object selSysNavList() {
         String key = KeyPre.KEY_TOPNAV;
-        List<SysNav> list = cacheTemplateService.findSetCache(key, 1, TimeUnit.SECONDS, new TypeReference<List<SysNav>>(){
+        List<SysNav> list = cacheTemplateService.findSetCache(key, 7, TimeUnit.DAYS, new TypeReference<List<SysNav>>(){
         }, () -> {
             List<SysNav> sysNavs = new ArrayList<>();
             List<SysNav> ltv = sysTvDao.selSysNavList();
@@ -69,10 +61,8 @@ public class SysTvProviderImpl implements SysTvProvider {
                     ltv.remove(sysNav);
                 }
             }
-            System.out.println("==="+ltv);
             return ltv;
         });
-        System.out.println("---"+list);
         return JSON.toJSON(list);
     }
 }
