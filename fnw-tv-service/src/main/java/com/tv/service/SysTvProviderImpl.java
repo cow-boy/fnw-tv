@@ -47,38 +47,32 @@ public class SysTvProviderImpl implements SysTvProvider {
     @Override
     public Object selSysNavList() {
         String key = KeyPre.KEY_TOPNAV;
-  /*      List<SysNav> list = cacheTemplateService.findSetCache(key, 1, TimeUnit.SECONDS, new TypeReference<List<SysNav>>(){
+        List<SysNav> list = cacheTemplateService.findSetCache(key, 1, TimeUnit.SECONDS, new TypeReference<List<SysNav>>(){
         }, () -> {
+            List<SysNav> sysNavs = new ArrayList<>();
             List<SysNav> ltv = sysTvDao.selSysNavList();
-
             for (SysNav nav: ltv) {
+                List<SysNav> navs = new ArrayList<>();
                 Integer navId = nav.getNavId();
                 for (SysNav na: ltv) {
                     Integer navPid = na.getNavPid();
                     if (navId.equals(navPid)) {
-                        nav.getSysNavs().add(na);
-                        ltv.remove(na);
+                        navs.add(na);
+                        sysNavs.add(na);
                     }
                 }
+                nav.setSysNavs(navs);
             }
-
-            return ltv;
-        });*/
-        List<SysNav> ltv = sysTvDao.selSysNavList();
-        for (SysNav nav: ltv) {
-            List<Object> navs = new ArrayList<>();
-            Integer navId = nav.getNavId();
-            for (SysNav na: ltv) {
-                Integer navPid = na.getNavPid();
-                if (navId.equals(navPid)) {
-                    navs.add(na);
-
-
+            for(int i = ltv.size() - 1; i >= 0; i--){
+                SysNav sysNav = ltv.get(i);
+                if(sysNavs.contains(sysNav)){
+                    ltv.remove(sysNav);
                 }
             }
-        }
-        System.out.println(ltv);
-        return null;
-       // return JSON.toJSON(list);
+            System.out.println("==="+ltv);
+            return ltv;
+        });
+        System.out.println("---"+list);
+        return JSON.toJSON(list);
     }
 }
