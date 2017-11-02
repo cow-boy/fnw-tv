@@ -40,6 +40,8 @@ public class LiveTvController {
         return liveTv.selLiveVipList();
     }
 
+
+
     @CacheEvict(value="localCache", allEntries=true)
     @ApiOperation(value = "清除本地缓存")
     @PostMapping("/deleteCache")

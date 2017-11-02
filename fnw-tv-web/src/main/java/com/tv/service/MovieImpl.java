@@ -6,7 +6,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.tv.cache.CacheTemplateService;
 import com.tv.common.Const;
 import com.tv.common.KeyPre;
-import com.tv.provider.LiveTvProvider;
+import com.tv.provider.MovieProvider;
 import com.tv.provider.SysTvProvider;
 import com.tv.util.FnwStr;
 import org.slf4j.Logger;
@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
  * @create 2017-10-30 16:34
  **/
 @Service
-public class SysTvImpl {
+public class MovieImpl {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -33,13 +33,13 @@ public class SysTvImpl {
 
     //@Inject
     @Reference
-    private SysTvProvider sysTvProvider;
+    private MovieProvider movieProvider;
 
-    @Cacheable(value="localCache", key = "'localCache_selnavTvList'", sync=true)
-    public Object selnavTvList() {
-        String key = KeyPre.KEY_TOPNAV;
+    @Cacheable(value="localCache", key="'selMvList_'+#type+'_'+#code",sync=true)
+    public Object selMvList(Integer type, Integer code) {
+        String key = FnwStr.join(KeyPre.KEY_MOVIE, type, Const.COLON, code);
         return cacheTemplateService.findSetCacheStr(key, 7, TimeUnit.DAYS, () -> {
-            return sysTvProvider.selSysNavList();
-        });
+            return movieProvider.selMvList(type, code, null);
+    });
     }
 }

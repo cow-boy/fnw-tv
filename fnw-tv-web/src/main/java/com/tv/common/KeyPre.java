@@ -26,4 +26,7 @@ public class KeyPre {
      */
     public static final String KEY_TOPNAV = "key:web:topnav:";
 
+
+    public static final String KEY_MOVIE = "key:web:movie:";
+
 }
