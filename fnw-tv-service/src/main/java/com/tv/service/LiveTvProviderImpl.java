@@ -72,4 +72,15 @@ public class LiveTvProviderImpl implements LiveTvProvider {
         return JSON.toJSON(list);
     }
 
+    @Override
+    public Object liveCctvList() {
+        String key = KeyPre.KEY_LIVECCTV;
+        List<LiveTv> list = cacheTemplateService.findSetCache(key, 7, TimeUnit.DAYS, new TypeReference<List<LiveTv>>(){
+        }, () -> {
+            List<LiveTv> ltv = liveTvDao.liveCctvList();
+            return ltv;
+        });
+        return JSON.toJSON(list);
+    }
+
 }

@@ -17,6 +17,11 @@ public class KeyPre {
     public static final String KEY_LIVETV = "key:service:livetv:";
 
     /**
+     * cctv数据源地址
+     */
+    public static final String KEY_LIVECCTV = "key:service:livecctv:";
+
+    /**
      * vip视频解析地址
      */
     public static final String KEY_LIVEVIP = "key:service:livevip:";
@@ -25,5 +30,10 @@ public class KeyPre {
      * 系统头部导航
      */
     public static final String KEY_TOPNAV = "key:service:topnav:";
+
+    /**
+     * 电影列表
+     */
+    public static final String KEY_VIDEO = "key:service:video:";
 
 }

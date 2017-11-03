@@ -2,6 +2,7 @@ package com.tv.dao;
 
 import com.tv.model.Movie;
 import com.tv.model.SysNav;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -21,5 +22,5 @@ public interface MovieDao {
      * @param search   搜索
      * @return
      */
-    List<Movie> selMvList(Integer type, Integer code, String search);
+    List<Movie> selMvList(@Param("type") Integer type, @Param("code") Integer code, @Param("search") String search);
 }

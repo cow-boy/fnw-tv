@@ -36,4 +36,10 @@ public interface LiveTvDao {
      * @return
      */
     List<LiveVip> selLiveVipList();
+
+    /**
+     * cctv数据源地址
+     * @return
+     */
+    List<LiveTv> liveCctvList();
 }
