@@ -27,6 +27,11 @@
         <result column="vip_sort" jdbcType="DECIMAL" property="vipSort" />
     </resultMap>
 
+    <resultMap id="CodeName" type="com.tv.model.CodeName">
+        <result column="code" jdbcType="VARCHAR" property="code" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+    </resultMap>
+
     <select id="selLiveTvList" resultMap="LiveTv" parameterType="java.util.Map">
         SELECT t1.id, t1.live_type, t1.is_hot, t1.live_code, t1.live_pic, t1.description, t1.sort, t2.name FROM tv_live t1
         LEFT JOIN tv_dic t2 ON t1.live_code = t2.id
@@ -52,7 +57,7 @@
         ORDER BY vip_sort
     </select>
 
-    <select id="liveCctvList" resultMap="LiveTv" parameterType="java.util.Map">
+    <select id="liveCctvList" resultMap="CodeName" parameterType="java.util.Map">
         SELECT t1.key code, t2.line name FROM tv_live t1 LEFT JOIN
           (select * from (
         select t.id, t.pid,t.line,count(*) as rank from tv_line t
