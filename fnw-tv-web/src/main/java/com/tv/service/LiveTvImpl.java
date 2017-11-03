@@ -51,7 +51,7 @@ public class LiveTvImpl {
         });
     }
 
-    @Cacheable(value="localCache", key = "'LiveTvImpl_selLiveVipList'", sync=true)
+    @Cacheable(value="localCache", key = "'LiveTvImpl_liveCctvList'", sync=true)
     public Object liveCctvList() {
         String key = KeyPre.KEY_LIVECCTV;
         return cacheTemplateService.findSetCacheStr(key, 7, TimeUnit.DAYS, () -> {
