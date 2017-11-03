@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://www.jq22.com/jquery-info3848 -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>放牛娃TV,为了无法享受的视觉</title>
+    <META name="keywords" content="音乐,视频,电影,电视剧,免费视频,免费音乐,VIP免费视频,体育视频,娱乐视频,无广告视频,最新电影,短视频,直播,影评,图片,预告片,影讯,论坛,完整版高清,电影院,广告">
+    <META name="description" content="放牛娃TV,播放完整版高清免费无广告各大视频网站的VIP视频,提供最全面最及时的电影、电视剧视频">
+    <meta name="author" content="放牛娃TV">
+    <meta name="Copyright" content="放牛娃TV">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link rel="Shortcut icon" href="http://www.jq22.com/favicon.ico">
+    <link href="tv/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <!--<link rel="stylesheet" type="text/css" href="./myui/wangEditor.css">-->
+    <link rel="stylesheet" type="text/css" href="tv/css/pifu.css">
+    <link href="tv/css/my.css" rel="stylesheet" media="screen">
+    <!--<link rel="stylesheet" href="./myui/share_style0_24.css">-->
+    <link rel="stylesheet" href="tv/css/index.css">
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="tv/css/newcommons.css">
+    <link rel="stylesheet" href="swiper/css/swiper.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+    <script>var n = 1;</script>
+
+</head>
+<body data-spy="scroll" data-target=".navbar-example" style="background-color: rgb(244, 244, 244);" id="mydiv">
+
+<!-- start 头部  -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+            <a class="navbar-logo" href="http://www.cattlehome.cn/"><img src="index/pic/fnwlogo.jpg" height="100%" alt="在线视频"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="javascript:void(0);" target="_blank"><i class="fa fa-ship" aria-hidden="true"></i> &nbsp;网站公告</a>
+                </li>
+                <li>
+                    <a href="http://cattlehome.cn/help.html" target="_blank"><i class="fa fa-book"></i> &nbsp;帮助手册</a>
+                </li>
+                <li class="dropdown"><a rel="nofollow" href="#" target="_blank">
+                    <i class="fa fa-weibo"></i> &nbsp;分享</a></li>
+                <li>
+                    <div class="myhome">
+                        <div class="xyd"><i class="fa fa-bell-o" aria-hidden="true"></i></div>
+                        <a href="#"><img src="tv/img/2.png"></a>
+                        <div class="myhome-z bh2">
+                            <a class="bh" href="#"><i class="fa fa-home"></i> 个人中心</a>
+                            <a class="bh" href="#" onclick="myout()"><i
+                                    class="fa fa-sign-out"></i> 退出登录</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+<!--end 头部-->
+
+<!-- start导航 -->
+<div class="yn jz container-fluid nav-bgn m0 menuFixed" id="menu_wrap">
+
+    <div id="headerdh" class="container m0 swiper-nav swiper-container swiper-free-mode" style="position:relative;">
+        <div class="swiper-wrapper">
+            <a class="nzz swiper-slide" href="javascript:void(0);" id="z1"><span class="sort"><i class="fa fa-film"></i>&nbsp;体育赛事 <i class="fa fa-angle-down"></i></span></a>|
+            <a class="nzz swiper-slide" href="javascript:void(0);" id="z2"><span class="sort"><i class="fa fa-keyboard-o"></i>&nbsp;影视娱乐 <i class="fa fa-angle-down"></i></span></a>|
+            <a class="nzz swiper-slide" href="javascript:void(0);" id="z3"><span class="sort"><i class="fa fa-folder-open"></i>&nbsp;网络电视 <i class="fa fa-angle-down"></i></span></a>|
+            <a class="swiper-slide" href="javascript:void(0);" target="_parent"><span class="sort"><i class="fa fa-youtube-play"></i>&nbsp;搞笑视频</span></a>|
+            <a class="swiper-slide" href="javascript:void(0);" target="_parent"><span class="sort"><i class="fa fa-th-large"></i>&nbsp;在线直播</span></a>|
+            <a class="swiper-slide" href="payus.html" target="_blank" id="layerDemo"><span class="sort"><i class="fa fa-cc-paypal"></i>&nbsp;赞助我们</span></a></span>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div id="n1" class="nav-zi ty" style="display: none;">
+            <ul id="nz1" class="nn list-inline container m0 nadc" style="display: none;">
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-delicious ls"></i>足球</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-bell-o ls"></i>篮球</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-sort-numeric-desc ls"></i>排球</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-comments-o ls"></i>网球</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-stack-overflow ls"></i>台球</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-hand-o-up ls"></i>羽球</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-th-large ls"></i>棋牌</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-bar-chart ls"></i>棒球</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-spinner ls"></i>乒乓</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-circle-o ls"></i>赛车</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-long-arrow-down ls"></i>格斗</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-tags ls"></i>电竞</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href=""><i class="fa fa-link ls"></i>田径</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href=""><i class="fa fa-info-circle ls"></i>赛车</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href=""><i class="fa fa-code-fork ls"></i>综合</a></li>
+            </ul>
+            <ul id="nz2" class="nn list-inline container m0 nadc" style="display: none;">
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-eyedropper ls"></i>精选推荐</a></li>
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-paint-brush ls"></i>热门综艺</a></li>
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-clock-o ls"></i>顶级纪录</a></li>
+            </ul>
+            <ul id="nz3" class="nn list-inline container m0 nadc" style="display: none;">
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-play-circle-o ls"></i>央视频道</a></li>
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-exchange ls"></i>港台频道</a></li>
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-eye ls"></i>海外频道</a></li>
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-picture-o ls"></i>综合频道</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- end导航 -->
+
+<!--start主体-->
+<div class="container m0 bod top70" id="zt">
+    <!--左-->
+    <div class="col-lg-9 col-md-12 col-sm-12">
+        <div class="project">
+            <div class="adinfo">
+            </div>
+            <div class="project-content inad">
+
+                <iframe id="jiekouId" name="jiekou" src=""
+                        width="100%" height="600px" frameborder="no" border="0" marginwidth="0"
+                        marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="输入视频地址，如http://v.pptv.com/show/hxXnZMwyouBDwQ0.html，如因使用不当造成的侵权行为，请使用者自行承担！ " style="height: 34px; margin-top: 8px;" id="searchtext">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" id="searchVideo"
+                                style="border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-left-width: 0px;"><i
+                                class="fa fa-youtube-play"></i></button>
+                        </span>
+                </div>
+            </div>
+
+            <div class="in100">
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="https://vip.iqiyi.com/" target="_blank"><img
+                                    src="index/pic/aqylogo.png"></a></dt>
+                            <dd>爱奇艺视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://vip.youku.com/" target="_blank"><img
+                                    src="index/pic/youkulogo.png"></a></dt>
+                            <dd>优酷视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://vip.pptv.com/" target="_blank"><img
+                                    src="index/pic/pptvlogo.png"></a></dt>
+                            <dd>PPTV聚力视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://v.qq.com/" target="_blank"><img
+                                    src="index/pic/qqlogo.png"></a></dt>
+                            <dd>腾讯视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://www.tudou.com/" target="_blank"><img
+                                    src="index/pic/tudoulogo.png"></a></dt>
+                            <dd>土豆视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="https://film.sohu.com/vip.html" target="_blank"><img
+                                    src="index/pic/sohulogo.png"></a></dt>
+                            <dd>搜狐视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://www.le.com/" target="_blank"><img
+                                    src="index/pic/letvlogo.png"></a></dt>
+                            <dd>乐视TV视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://www.56.com/" target="_blank"><img
+                                    src="index/pic/56logo.png"></a></dt>
+                            <dd>56视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://www.ku6.com/" target="_blank"><img
+                                    src="index/pic/ku6logo.png"></a></dt>
+                            <dd>酷6视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://www.wasu.cn/" target="_blank"><img
+                                    src="index/pic/wasulogo.png"></a></dt>
+                            <dd>WASU华数视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://www.yinyuetai.com/" target="_blank"><img
+                                    src="index/pic/yinyuetailogo.png"></a></dt>
+                            <dd>音悦台MV</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://www.mgtv.com/" target="_blank"><img
+                                    src="index/pic/hunantvlogo.png"></a></dt>
+                            <dd>芒果TV视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://video.sina.com.cn/" target="_blank"><img
+                                    src="index/pic/sinalogo.png"></a></dt>
+                            <dd>新浪视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://v.163.com/" target="_blank"><img
+                                    src="index/pic/163logo.png"></a></dt>
+                            <dd>网易视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://v.6.cn/" target="_blank"><img
+                                    src="index/pic/6logo.png"></a></dt>
+                            <dd>6间房视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://www.kugou.com/mvweb/html/" target="_blank"><img
+                                    src="index/pic/kugoulogo.png"></a></dt>
+                            <dd>酷狗MV视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://http://www.baomihua.com/" target="_blank"><img
+                                    src="index/pic/baomihualogo.png"></a></dt>
+                            <dd>爆米花视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://v.ifeng.com/" target="_blank"><img
+                                    src="index/pic/ifenglogo.png"></a></dt>
+                            <dd>凤凰视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://www.kankanews.com/" target="_blank"><img
+                                    src="index/pic/kankannewslogo.png"></a></dt>
+                            <dd>看看新闻网视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://www.mtime.com/" target="_blank"><img
+                                    src="index/pic/mtimelogo.png"></a></dt>
+                            <dd>时光网视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://www.kuwo.cn/mv" target="_blank"><img
+                                    src="index/pic/kuwologo.png"></a></dt>
+                            <dd>酷我音乐MV视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://www.1905.com/" target="_blank"><img
+                                    src="index/pic/1905logo.png"></a></dt>
+                            <dd>1905电影网视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://www.tangdou.com/" target="_blank"><img
+                                    src="index/pic/tangdoulogo.png"></a></dt>
+                            <dd>糖豆视频</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <div class="logos_lists">
+                        <dl>
+                            <dt><a href="http://www.cctv.com/" target="_blank"><img
+                                    src="index/pic/cntvlogo.png"></a></dt>
+                            <dd>央视网</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="df"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--end左-->
+
+    <!--右-->
+    <div class="col-lg-2 visible-lg" style="width:200px">
+
+        <ul class="list-group">
+            <a name="cctv1" class="list-group-item on" href="javascript:void(0);" onclick="subgo(this)" data-para="time"><i class="fa fa-flag"></i>
+                &nbsp;CCTV-1综合</a>
+            <a name="cctv2" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="comments"><i
+                    class="fa fa-heart"></i> &nbsp;CCTV-2财经</a>
+            <a name="cctv3" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="comments"><i
+                    class="fa fa-comments-o"></i> &nbsp;CCTV-3综艺</a>
+            <a name="cctv4y" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="downloads"><i
+                    class="fa fa-arrow-circle-o-down"></i> &nbsp;CCTV-4亚洲</a>
+            <a name="cctv4o" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="ie8"><i class="fa fa-bus"></i>
+                &nbsp;CCTV-4欧洲</a>
+            <a name="cctv5" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="ie6"><i
+                    class="fa fa-motorcycle"></i> &nbsp;CCTV-5体育</a>
+            <a name="cctv5j" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="ie6"><i
+                    class="fa fa-motorcycle"></i> &nbsp;CCTV-5+体育赛事</a>
+            <a name="cctv6" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="ie6"><i
+                    class="fa fa-motorcycle"></i> &nbsp;CCTV-6电影</a>
+            <a name="cctv7" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="ie6"><i
+                    class="fa fa-motorcycle"></i> &nbsp;CCTV-7军事农业</a>
+            <a name="cctv8" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="ie6"><i
+                    class="fa fa-motorcycle"></i> &nbsp;CCTV-8电视剧</a>
+            <a name="cctv9" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="ie6"><i
+                    class="fa fa-motorcycle"></i> &nbsp;CCTV-9记录</a>
+            <a name="cctv10" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="ie6"><i
+                    class="fa fa-motorcycle"></i> &nbsp;CCTV-10科教</a>
+            <a name="cctv11" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="ie6"><i
+                    class="fa fa-motorcycle"></i> &nbsp;CCTV-11戏曲</a>
+            <a name="cctv12" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="ie6"><i
+                    class="fa fa-motorcycle"></i> &nbsp;CCTV-12社会法制</a>
+            <a name="cctv13" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="ie6"><i
+                    class="fa fa-motorcycle"></i> &nbsp;CCTV-13新闻</a>
+            <a name="cctv14"class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="ie6"><i
+                    class="fa fa-motorcycle"></i> &nbsp;CCTV-14少儿</a>
+            <a name="cctv15" class="list-group-item" href="javascript:void(0);" onclick="subgo(this)" data-para="ie6"><i
+                    class="fa fa-motorcycle"></i> &nbsp;CCTV-15音乐</a>
+            <a name="cctvmo" class="list-group-item" href="livelist.html" data-para="ie6"><i
+                    class="fa fa-motorcycle"></i> &nbsp;更多直播</a>
+        </ul>
+        <ul class="list-group">
+
+        </ul>
+        <ul class="list-group" style="margin-top:0px">
+        </ul>
+    </div>
+    <!--end右-->
+</div>
+<!--end主体-->
+
+<!-- start底部-->
+<nav class="foot navbar-inverse navbar-fixed-bottom">
+    <ul class="list-inline">
+        <li class="footer-ss"><a href="copyright.html" target="_blank">版权声明</a></li>
+        <li class="footer-ss"><a href="feedback.html" target="_blank">在线反馈</a></li>
+        <li class="footer-ss"><a href="cooperation.html" target="_blank">广告合作</a></li>
+        <!--<li class="footer-ss">帮助中心</li>-->
+        <li class="footer-ss">放牛娃TV所有视频均链接到各大视频网站播放，本站不提供任何视听上传服务，如有异议请与我们取得联系。</li>
+        <li>Copyright © 2015-2017 FNW-TV Version 3.0.0. 备案号:<a href="http://www.miitbeian.gov.cn/" target="_blank"
+                                                               rel="nofollow">深ICP备XXXXXXX号-1</a></li>
+    </ul>
+    <ul class="list-inline text-right">
+        <li>
+        </li>
+    </ul>
+</nav>
+<!--end底部-->
+
+<!-- start悬浮 -->
+<div class="itop" style="display: block;"></div>
+<!-- end悬浮 -->
+
+<!-- start背景  -->
+<div id="pfk">
+    <div class="pfys"><i class="fa fa-cog " aria-hidden="true"></i><a class="pfysA pfy1" name="#222222"></a><a class="pfysA pfy2" name="#f4f4f4"></a></div>
+</div>
+<!-- end背景  -->
+
+<script src="tv/js/hm.js"></script>
+<script src="index/js/data.js"></script>
+<script src="layui/layui.js"></script>
+<script src="common/js/canvas-particle.js"></script>
+<script src="tv/js/m.js"></script>
+<script type="text/javascript" src="tv/js/shCore.js"></script>
+<script type="text/javascript" src="tv/js/shBrushXml.js"></script>
+<script type="text/javascript">SyntaxHighlighter.highlight();</script>
+<script src="swiper/js/swiper.min.js"></script>
+<script src="tv/js/pifu.js"></script>
+<script type="text/javascript" src="common/js/common.js"></script>
+<script src="index/js/index.js"></script>
+
+</body>
+</html>

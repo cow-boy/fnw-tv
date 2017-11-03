@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cctv</title>
+</head>
+<body>
+<div id="a1"></div>
+<script type="text/javascript" src="ckplayer/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+
+    var ckUrl = window.parent.parentCc;
+    var flashvars={
+        f:'m3u8/m3u8.swf',
+        a: ckUrl,        //m3u8文件
+        i:'http://www.ckplayer.com/static/images/cqdw.jpg',
+        c: 0,       //调用 ckplayer.js 配置播放器
+        p: 1,       //自动播放视频
+        s: 4,       //flash插件形式发送视频流地址给播放器进行播放
+        lv: 0,      //注意，如果是直播，需设置lv:1
+        loaded: 'loadedHandler'
+    };
+    var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
+    var video=[ckUrl];
+    CKobject.embed('ckplayer/ckplayer/ckplayer.swf','a1','ckplayer_a1','100%','600px',false,flashvars,video,params);
+
+</script>
+</body>
+</html>
