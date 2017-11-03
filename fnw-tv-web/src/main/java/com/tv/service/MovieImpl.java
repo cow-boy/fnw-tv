@@ -40,6 +40,6 @@ public class MovieImpl {
         String key = FnwStr.join(KeyPre.KEY_MOVIE, type, Const.COLON, code);
         return cacheTemplateService.findSetCacheStr(key, 7, TimeUnit.DAYS, () -> {
             return movieProvider.selMvList(type, code, null);
-    });
+        });
     }
 }

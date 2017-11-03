@@ -34,6 +34,12 @@ public class LiveTvController {
         return liveTv.selLiveTvList(null, null);
     }
 
+    @ApiOperation(value = "CCTV直播源")
+    @PostMapping("/liveCctv")
+    public Object liveCctv(){
+        return liveTv.liveCctvList();
+    }
+
     @ApiOperation(value = "VIP视频解析")
     @PostMapping("/liveVip")
     public Object liveVip(){

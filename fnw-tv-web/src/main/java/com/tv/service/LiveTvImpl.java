@@ -35,7 +35,7 @@ public class LiveTvImpl {
     @Reference
     public LiveTvProvider liveTvProvider;
 
-    @Cacheable(value="localCache", key="'selLiveTvList_'+#isHot+'_'+#liveType",sync=true)
+    @Cacheable(value="localCache", key="'LiveTvImpl_selLiveTvList_'+#isHot+'_'+#liveType",sync=true)
     public Object selLiveTvList(Short liveType, Short isHot) {
         String key = FnwStr.join(KeyPre.KEY_LIVETV, liveType, Const.COLON, isHot);
         return cacheTemplateService.findSetCacheStr(key, 7, TimeUnit.DAYS, () -> {
@@ -43,12 +43,19 @@ public class LiveTvImpl {
         });
     }
 
-    @Cacheable(value="localCache", key = "'selLiveVipList_selLiveVipList'", sync=true)
+    @Cacheable(value="localCache", key = "'LiveTvImpl_selLiveVipList'", sync=true)
     public Object selLiveVipList() {
-        System.out.println("查询本地缓存");
         String key = KeyPre.KEY_LIVEVIP;
         return cacheTemplateService.findSetCacheStr(key, 7, TimeUnit.DAYS, () -> {
             return liveTvProvider.selLiveVipList();
+        });
+    }
+
+    @Cacheable(value="localCache", key = "'LiveTvImpl_selLiveVipList'", sync=true)
+    public Object liveCctvList() {
+        String key = KeyPre.KEY_LIVECCTV;
+        return cacheTemplateService.findSetCacheStr(key, 7, TimeUnit.DAYS, () -> {
+            return liveTvProvider.liveCctvList();
         });
     }
 }
