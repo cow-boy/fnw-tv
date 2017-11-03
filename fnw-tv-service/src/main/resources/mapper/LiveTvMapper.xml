@@ -52,4 +52,17 @@
         ORDER BY vip_sort
     </select>
 
+    <select id="liveCctvList" resultMap="LiveTv" parameterType="java.util.Map">
+        SELECT t1.key code, t2.line name FROM tv_live t1 LEFT JOIN
+          (select * from (
+        select t.id, t.pid,t.line,count(*) as rank from tv_line t
+        LEFT OUTER JOIN tv_line r
+        on t.pid = r.pid
+        and t.sort>=r.sort
+        group by t.pid,t.sort
+        order by t.sort, t.line_time desc
+        ) s where s.rank = 1)
+          t2 on t1.live_code = t2.pid
+    </select>
+
 </mapper>

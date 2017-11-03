@@ -25,21 +25,22 @@
         <result column="toStar" jdbcType="VARCHAR" property="toStar" />
         <result column="briefIntroduction" jdbcType="VARCHAR" property="briefIntroduction" />
         <result column="pic" jdbcType="VARCHAR" property="pic" />
-        <result column="creatTime" jdbcType="VARCHAR" property="creatTime" />
+        <result column="creatTime" jdbcType="TIMESTAMP" property="creatTime" />
         <result column="sorts" jdbcType="DECIMAL" property="sorts" />
+        <result column="link" jdbcType="VARCHAR" property="link" />
     </resultMap>
 
     <select id="selMvList" resultMap="Movie" parameterType="java.util.Map">
-        SELECT id, source, type, line, code, translation, title, sub, age, origin, category, language, subtitle, releaseDate,
-        fileFormat, videoSize, fileSize, longs, director, toStar, briefIntroduction, pic, creatTime, sorts FROM mv_list
-        WHERE isshow = 0
+        SELECT t.id, t.source, t.type, t.line, t.code, t.translation, t.title, t.sub, t.age, t.origin, t.category, t.language, t.subtitle, t.releaseDate,
+        t.fileFormat, t.videoSize, t.fileSize, t.longs, t.director, t.toStar, t.briefIntroduction, t.pic, t.creatTime, t.sorts, t.link FROM mv_list t
+        WHERE t.isshow = 0
         <if test="type != null">
-            AND type = #{type,jdbcType=DECIMAL}
+            AND t.type = #{type,jdbcType=DECIMAL}
         </if>
         <if test="code != null">
-            AND code = #{code,jdbcType=DECIMAL}
+            AND t.code = #{code,jdbcType=DECIMAL}
         </if>
-        ORDER BY sorts, creatTime desc
+        ORDER BY t.sorts, t.creatTime desc
     </select>
 
 </mapper>
