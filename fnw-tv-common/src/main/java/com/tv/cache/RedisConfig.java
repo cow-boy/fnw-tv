@@ -25,7 +25,8 @@ import java.lang.reflect.Method;
 @EnableCaching
 public class RedisConfig extends CachingConfigurerSupport {
 
-    @Bean
+    //注释一下两个方法，避免与Caffeine冲突
+   /* @Bean
     @Override
     public KeyGenerator keyGenerator() {
         return new KeyGenerator() {
@@ -40,15 +41,15 @@ public class RedisConfig extends CachingConfigurerSupport {
                 return sb.toString();
             }
         };
-    }
+    }*/
 
-    @Bean
+    /*@Bean
     public CacheManager cacheManager(RedisTemplate redisTemplate) {
         RedisCacheManager rcm = new RedisCacheManager(redisTemplate);
         //设置缓存过期时间
         //rcm.setDefaultExpiration(60);//秒
         return rcm;
-    }
+    }*/
 
     @Bean
     public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factory) {
