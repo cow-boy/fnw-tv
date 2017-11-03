@@ -20,4 +20,9 @@ public interface LiveTvProvider {
      */
     Object selLiveVipList();
 
+    /**
+     * CCTV解析地址
+     * @return
+     */
+    Object liveCctvList();
 }
