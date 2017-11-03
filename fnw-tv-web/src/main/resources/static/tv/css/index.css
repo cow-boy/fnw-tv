@@ -1,0 +1,58 @@
+.affix {
+    display: block;
+    margin-top: 40px;
+    -webkit-animation: fadeInDown 1s .2s ease both;
+    -moz-animation: fadeInDown 1s .2s ease both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0)
+    }
+}
+
+@-moz-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(-20px)
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0)
+    }
+}
+
+.dz {
+    font-size: 14px;
+    padding-left: 10px;
+    font-family: Vrinda;
+    color: #666666
+}
+
+.dzs {
+    color: #91ab4e;
+    padding-left: 5px;
+}
+
+.inad {
+    /*background-image: url(img/inadbg.png);*/
+    background-repeat: no-repeat;
+    background-position: 0% 650px;
+}
+
+@media screen and (max-width: 1000px) {
+    .inad {
+        background-image: none;
+    }
+}
+
+.jcjg {
+    border: 1px solid #c3e4b4;
+    box-sizing: border-box;
+    cursor: auto
+}
