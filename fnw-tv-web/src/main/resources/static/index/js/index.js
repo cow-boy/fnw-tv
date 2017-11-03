@@ -24,7 +24,7 @@ $("#searchVideo").click(function(){
     if (i == 4) {
         layer.msg('全部播放失败了，重新更换播放地址',{icon: 5});
     }
-    var url = vipdata[i] + bfUrl;
+    var url = vipData[i] + bfUrl;
     $("#jiekouId").attr('src', url);
 });
 
@@ -34,5 +34,6 @@ function subgo(obj) {
     var thisObj=$(obj);
     var cc = thisObj.attr("name");
     $("#jiekouId").attr('src', 'cctv.html');
-    parentCc = cctvdata[cc];
+    parentCc = cctvData.data[cc];
 }
+
