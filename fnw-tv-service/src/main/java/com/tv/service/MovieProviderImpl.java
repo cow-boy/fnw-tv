@@ -47,8 +47,7 @@ public class MovieProviderImpl implements MovieProvider {
         String key = FnwStr.join(KeyPre.KEY_VIDEO, type, Const.COLON, code, Const.COLON, search);
         List<Movie> list = cacheTemplateService.findSetCache(key, 7, TimeUnit.DAYS, new TypeReference<List<Movie>>(){
         }, () -> {
-            List<Movie> ltv = movieDao.selMvList(type, code, search);
-            return ltv;
+            return movieDao.selMvList(type, code, search);
         });
         return JSON.toJSON(list);
     }

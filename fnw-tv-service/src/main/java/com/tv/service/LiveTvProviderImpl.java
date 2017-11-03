@@ -11,6 +11,7 @@ import com.tv.common.Const;
 import com.tv.common.KeyPre;
 import com.tv.dao.LiveTvDao;
 
+import com.tv.model.CodeName;
 import com.tv.model.LiveLine;
 import com.tv.model.LiveTv;
 import com.tv.model.LiveVip;
@@ -66,8 +67,7 @@ public class LiveTvProviderImpl implements LiveTvProvider {
         String key = KeyPre.KEY_LIVEVIP;
         List<LiveVip> list = cacheTemplateService.findSetCache(key, 7, TimeUnit.DAYS, new TypeReference<List<LiveVip>>(){
         }, () -> {
-            List<LiveVip> ltv = liveTvDao.selLiveVipList();
-            return ltv;
+            return liveTvDao.selLiveVipList();
         });
         return JSON.toJSON(list);
     }
@@ -75,10 +75,9 @@ public class LiveTvProviderImpl implements LiveTvProvider {
     @Override
     public Object liveCctvList() {
         String key = KeyPre.KEY_LIVECCTV;
-        List<LiveTv> list = cacheTemplateService.findSetCache(key, 7, TimeUnit.DAYS, new TypeReference<List<LiveTv>>(){
+        List<CodeName> list = cacheTemplateService.findSetCache(key, 7, TimeUnit.DAYS, new TypeReference<List<CodeName>>(){
         }, () -> {
-            List<LiveTv> ltv = liveTvDao.liveCctvList();
-            return ltv;
+            return liveTvDao.liveCctvList();
         });
         return JSON.toJSON(list);
     }

@@ -1,5 +1,6 @@
 package com.tv.dao;
 
+import com.tv.model.CodeName;
 import com.tv.model.LiveLine;
 import com.tv.model.LiveTv;
 import com.tv.model.LiveVip;
@@ -41,5 +42,5 @@ public interface LiveTvDao {
      * cctv数据源地址
      * @return
      */
-    List<LiveTv> liveCctvList();
+    List<CodeName> liveCctvList();
 }
