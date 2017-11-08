@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tv.dao.GrabMatchDao">
+
+    <resultMap id="HotMatch" type="com.tv.model.HotMatch">
+        <result column="label" jdbcType="DECIMAL" property="label" />
+        <result column="id" jdbcType="VARCHAR" property="id" />
+        <result column="dataTime" jdbcType="VARCHAR" property="dataTime" />
+        <result column="homeTeam" jdbcType="VARCHAR" property="homeTeam" />
+        <result column="homePic" jdbcType="VARCHAR" property="homePic" />
+        <result column="guestTeam" jdbcType="VARCHAR" property="guestTeam" />
+        <result column="guestPic" jdbcType="VARCHAR" property="guestPic" />
+        <result column="title" jdbcType="VARCHAR" property="title" />
+        <result column="matchType" jdbcType="VARCHAR" property="matchType" />
+        <result column="hTime" jdbcType="VARCHAR" property="hTime" />
+    </resultMap>
+
+    <insert id="addHotMatch"  parameterType="java.util.List">
+        INSERT INTO CISHAN_SUBSIDY_ACCOUNT_RECHARGE_MONTH(label, id, dataTime,
+        homeTeam, homePic, guestTeam, guestPic, title, matchType, hTime, curTime)
+        VALUES
+        <foreach collection="list" item="item" index="index" separator="," >
+            (#{item.label,jdbcType=VARCHAR}, #{item.id,jdbcType=VARCHAR},
+            #{item.dataTime,jdbcType=VARCHAR}, #{item.homeTeam,jdbcType=VARCHAR},
+            #{item.homePic,jdbcType=VARCHAR}, #{item.guestTeam,jdbcType=VARCHAR},
+            #{item.guestPic,jdbcType=VARCHAR}, #{item.title,jdbcType=VARCHAR},
+            #{item.matchType,jdbcType=VARCHAR}, #{item.hTime,jdbcType=VARCHAR}, SYSTIMESTAMP)
+        </foreach>
+    </insert>
+
+</mapper>
