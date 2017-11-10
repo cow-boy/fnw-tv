@@ -92,6 +92,7 @@ public class Group2Map {
                     + " ；clazz：" + clazz + " ；methodName：" + methodName);
             return;
         }
+        methodName = "get"+toUpperCase4Index(methodName);
         // 获取方法
         Method method = getMethodByName(clazz, methodName);
         // 非空判断
@@ -100,6 +101,31 @@ public class Group2Map {
         }
         // 正式分组
         listGroup2Map(list, map, method);
+    }
+
+    /**
+     * 首字母大写
+     *
+     * @param string
+     * @return
+     */
+    public static String toUpperCase4Index(String string) {
+        char[] methodName = string.toCharArray();
+        methodName[0] = toUpperCase(methodName[0]);
+        return String.valueOf(methodName);
+    }
+
+    /**
+     * 字符转成大写
+     *
+     * @param chars
+     * @return
+     */
+    public static char toUpperCase(char chars) {
+        if (97 <= chars && chars <= 122) {
+            chars ^= 32;
+        }
+        return chars;
     }
 
 }

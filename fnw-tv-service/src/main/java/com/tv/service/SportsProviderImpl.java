@@ -53,7 +53,7 @@ public class SportsProviderImpl implements SportsProvider {
             return hotMatches;
         });
         Map<String, List<HotMatch>> map = new HashMap<>();
-        Group2Map.listGroup2Map(list, map, HotMatch.class, "getHTime");
+        Group2Map.listGroup2Map(list, map, HotMatch.class, "hTime");
         return JSON.toJSON(map);
     }
 }
