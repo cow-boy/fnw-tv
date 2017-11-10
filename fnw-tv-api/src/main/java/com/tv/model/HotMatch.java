@@ -6,6 +6,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
  * 热门赛事
@@ -29,4 +30,5 @@ public class HotMatch implements Serializable{
     private String matchType;
     private String hTime;
     private Date curTime;
+    private List<Lines> lines;
 }

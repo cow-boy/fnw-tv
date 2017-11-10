@@ -20,10 +20,11 @@
 
 	<modules>
 		<module>fnw-tv-common</module>
+		<module>fnw-tv-cms</module>
+		<module>fnw-tv-grap</module>
+		<module>fnw-tv-api</module>
 		<module>fnw-tv-web</module>
 		<module>fnw-tv-service</module>
-		<module>fnw-tv-api</module>
-		<module>fnw-tv-cms</module>
 	</modules>
 
 	<properties>
@@ -158,14 +159,14 @@
 		<repository>
 			<id>Nexus</id>
 			<name>Team Nexus Repository</name>
-			<url>http://39.:9903/nexus/content/groups/public</url>
+			<url>http://39.108.49.183:9903/nexus/content/groups/public</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>Nexus</id>
 			<name>Team Nexus Repository</name>
-			<url>http://39.1:9903/nexus/content/groups/public</url>
+			<url>http://39.108.49.183:9903/nexus/content/groups/public</url>
 		</pluginRepository>
 	</pluginRepositories>
 

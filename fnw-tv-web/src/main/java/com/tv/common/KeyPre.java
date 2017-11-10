@@ -36,4 +36,9 @@ public class KeyPre {
      */
     public static final String KEY_MOVIE = "key:web:movie:";
 
+    /**
+     * 体育赛事
+     */
+    public static final String KEY_SPORTS = "key:web:sports:";
+
 }

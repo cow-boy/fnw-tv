@@ -13,18 +13,19 @@
         <result column="title" jdbcType="VARCHAR" property="title" />
         <result column="matchType" jdbcType="VARCHAR" property="matchType" />
         <result column="hTime" jdbcType="VARCHAR" property="hTime" />
+        <result column="curTime" jdbcType="TIMESTAMP" property="curTime" />
     </resultMap>
 
     <insert id="addHotMatch"  parameterType="java.util.List">
-        INSERT INTO CISHAN_SUBSIDY_ACCOUNT_RECHARGE_MONTH(label, id, dataTime,
-        homeTeam, homePic, guestTeam, guestPic, title, matchType, hTime, curTime)
+        INSERT INTO cur_match(label, id, dataTime,
+        homeTeam, homePic, guestTeam, guestPic, title, matchType, hTime)
         VALUES
         <foreach collection="list" item="item" index="index" separator="," >
             (#{item.label,jdbcType=VARCHAR}, #{item.id,jdbcType=VARCHAR},
             #{item.dataTime,jdbcType=VARCHAR}, #{item.homeTeam,jdbcType=VARCHAR},
             #{item.homePic,jdbcType=VARCHAR}, #{item.guestTeam,jdbcType=VARCHAR},
             #{item.guestPic,jdbcType=VARCHAR}, #{item.title,jdbcType=VARCHAR},
-            #{item.matchType,jdbcType=VARCHAR}, #{item.hTime,jdbcType=VARCHAR}, SYSTIMESTAMP)
+            #{item.matchType,jdbcType=VARCHAR}, #{item.hTime,jdbcType=VARCHAR})
         </foreach>
     </insert>
 

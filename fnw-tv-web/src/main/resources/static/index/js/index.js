@@ -33,7 +33,7 @@ var parentCc;
 function subgo(obj) {
     var thisObj=$(obj);
     var cc = thisObj.attr("name");
-    $("#jiekouId").attr('src', 'cctv.html');
+    $("#jiekouId").attr('src', 'm3u8.html');
     parentCc = cctvData.data[cc];
 }
 

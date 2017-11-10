@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tv.dao.SportsDao">
+
+    <resultMap id="HotMatch" type="com.tv.model.HotMatch">
+        <result column="label" jdbcType="DECIMAL" property="label" />
+        <result column="id" jdbcType="VARCHAR" property="id" />
+        <result column="homeTeam" jdbcType="VARCHAR" property="homeTeam" />
+        <result column="homePic" jdbcType="VARCHAR" property="homePic" />
+        <result column="guestTeam" jdbcType="VARCHAR" property="guestTeam" />
+        <result column="guestPic" jdbcType="VARCHAR" property="guestPic" />
+        <result column="title" jdbcType="VARCHAR" property="title" />
+        <result column="matchType" jdbcType="VARCHAR" property="matchType" />
+        <result column="hTime" jdbcType="VARCHAR" property="hTime" />
+    </resultMap>
+
+    <resultMap id="Lines" type="com.tv.model.Lines">
+        <result column="id" jdbcType="DECIMAL" property="id" />
+        <result column="spt_id" jdbcType="VARCHAR" property="sptId" />
+        <result column="line" jdbcType="VARCHAR" property="line" />
+        <result column="line_name" jdbcType="VARCHAR" property="lineName" />
+    </resultMap>
+
+    <select id="selSportsList" resultMap="HotMatch" parameterType="java.util.Map">
+        SELECT t1.id, t1.label, t1.hTime, t1.title, t1.matchType, t1.homeTeam, t1.homePic, t1.guestPic, t1.guestTeam FROM cur_match t1 ORDER BY dataTime ASC
+    </select>
+
+    <select id="selLineList" resultMap="Lines" parameterType="java.util.Map">
+        SELECT id, spt_id, line, line_name FROM spt_line WHERE spt_id = #{id,jdbcType=VARCHAR} ORDER BY sort
+    </select>
+
+</mapper>

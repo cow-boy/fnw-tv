@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://www.jq22.com/jquery-info3848 -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>放牛娃TV,为了无法享受的视觉</title>
+    <META name="keywords" content="音乐,视频,电影,电视剧,免费视频,免费音乐,VIP免费视频,体育视频,娱乐视频,无广告视频,最新电影,短视频,直播,影评,图片,预告片,影讯,论坛,完整版高清,电影院,广告">
+    <META name="description" content="放牛娃TV,播放完整版高清免费无广告各大视频网站的VIP视频,提供最全面最及时的电影、电视剧视频">
+    <meta name="author" content="放牛娃TV">
+    <meta name="Copyright" content="放牛娃TV">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link rel="Shortcut icon" href="http://www.jq22.com/favicon.ico">
+    <link href="tv/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <!--<link rel="stylesheet" type="text/css" href="./myui/wangEditor.css">-->
+    <link rel="stylesheet" type="text/css" href="tv/css/pifu.css">
+    <link href="tv/css/my.css" rel="stylesheet" media="screen">
+    <!--<link rel="stylesheet" href="./myui/share_style0_24.css">-->
+    <link rel="stylesheet" href="tv/css/index.css">
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="tv/css/newcommons.css">
+    <link rel="stylesheet" href="swiper/css/swiper.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+    <script>var n = 1;</script>
+    <style>
+        h4 {padding-top:10px; padding-bottom:10px}
+        .fanku {width: 800px;margin-left: auto;margin-right: auto;background-color: #FFFFFF;padding: 20px;box-shadow: 0 1px 3px rgba(0,0,0,0.07);}
+        .page-header {margin-top:10px}
+        #tjjg,#tjwc {display:none}
+        .fbjg  h3 {text-align: center; line-height:200px;}
+        .tj h4 {border-bottom: 1px solid #E5E5E5; margin-bottom:10px;font-size:16px}
+        .tj{line-height:30px}
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar-example" style="background-color: rgb(244, 244, 244);" id="mydiv">
+
+<!-- start 头部  -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+            <a class="navbar-logo" href="http://www.cattlehome.cn/"><img src="index/pic/fnwlogo.jpg" height="100%" alt="在线视频"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="javascript:void(0);" target="_blank"><i class="fa fa-ship" aria-hidden="true"></i> &nbsp;网站公告</a>
+                </li>
+                <li>
+                    <a href="http://cattlehome.cn/help.html" target="_blank"><i class="fa fa-book"></i> &nbsp;帮助手册</a>
+                </li>
+                <li class="dropdown"><a rel="nofollow" href="#" target="_blank">
+                    <i class="fa fa-weibo"></i> &nbsp;分享</a></li>
+                <li>
+                    <div class="myhome">
+                        <div class="xyd"><i class="fa fa-bell-o" aria-hidden="true"></i></div>
+                        <a href="#"><img src="tv/img/2.png"></a>
+                        <div class="myhome-z bh2">
+                            <a class="bh" href="#"><i class="fa fa-home"></i> 个人中心</a>
+                            <a class="bh" href="#" onclick="myout()"><i
+                                    class="fa fa-sign-out"></i> 退出登录</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+<!--end 头部-->
+
+<!-- start导航 -->
+<div class="yn jz container-fluid nav-bgn m0 menuFixed" id="menu_wrap">
+
+    <div id="headerdh" class="container m0 swiper-nav swiper-container swiper-free-mode" style="position:relative;">
+        <div class="swiper-wrapper">
+            <a class="nzz swiper-slide" href="javascript:void(0);" id="z1"><span class="sort"><i class="fa fa-film"></i>&nbsp;体育赛事 <i class="fa fa-angle-down"></i></span></a>|
+            <a class="nzz swiper-slide" href="javascript:void(0);" id="z2"><span class="sort"><i class="fa fa-keyboard-o"></i>&nbsp;影视娱乐 <i class="fa fa-angle-down"></i></span></a>|
+            <a class="nzz swiper-slide" href="javascript:void(0);" id="z3"><span class="sort"><i class="fa fa-folder-open"></i>&nbsp;网络电视 <i class="fa fa-angle-down"></i></span></a>|
+            <a class="swiper-slide" href="javascript:void(0);" target="_parent"><span class="sort"><i class="fa fa-youtube-play"></i>&nbsp;搞笑视频</span></a>|
+            <a class="swiper-slide" href="javascript:void(0);" target="_parent"><span class="sort"><i class="fa fa-th-large"></i>&nbsp;在线直播</span></a>|
+            <a class="swiper-slide" href="payus.html" target="_blank" id="layerDemo"><span class="sort"><i class="fa fa-cc-paypal"></i>&nbsp;赞助我们</span></a></span>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div id="n1" class="nav-zi ty" style="display: none;">
+            <ul id="nz1" class="nn list-inline container m0 nadc" style="display: none;">
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-delicious ls"></i>足球</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-bell-o ls"></i>篮球</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-sort-numeric-desc ls"></i>排球</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-comments-o ls"></i>网球</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-stack-overflow ls"></i>台球</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-hand-o-up ls"></i>羽球</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-th-large ls"></i>棋牌</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-bar-chart ls"></i>棒球</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-spinner ls"></i>乒乓</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-circle-o ls"></i>赛车</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-long-arrow-down ls"></i>格斗</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href="#"><i class="fa fa-tags ls"></i>电竞</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href=""><i class="fa fa-link ls"></i>田径</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href=""><i class="fa fa-info-circle ls"></i>赛车</a></li>
+                <li><a class="c-btn c-btn--border-line"
+                       href=""><i class="fa fa-code-fork ls"></i>综合</a></li>
+            </ul>
+            <ul id="nz2" class="nn list-inline container m0 nadc" style="display: none;">
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-eyedropper ls"></i>精选推荐</a></li>
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-paint-brush ls"></i>热门综艺</a></li>
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-clock-o ls"></i>顶级纪录</a></li>
+            </ul>
+            <ul id="nz3" class="nn list-inline container m0 nadc" style="display: none;">
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-play-circle-o ls"></i>央视频道</a></li>
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-exchange ls"></i>新闻综合</a></li>
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-eye ls"></i>影视娱乐</a></li>
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-picture-o ls"></i>港台频道</a></li>
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-picture-o ls"></i>体育科教</a></li>
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-picture-o ls"></i>财经生活</a></li>
+                <li><a class="c-btn c-btn--border-line" href="#"><i class="fa fa-picture-o ls"></i>综艺节目</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- end导航 -->
+
+<!--start主体-->
+<div class="container m0 bod top70" id="zt">
+
+    <div class="fanku">
+        <div class="page-header">
+            <h3>放牛娃TV版权声明</h3>
+        </div>
+
+        <div class="tj">
+            <p>放牛娃TV仅限个人使用，不可用于商业使用。<br>
+                1、由于放牛娃TV（cattlehome.cn）上的资源均来源于网络用户分享，故放牛娃TV不具备充分的监控能力来审查资源是否存在侵权等情节。放牛娃TV不拥有此类资源的版权，本站所有资源仅供学习与交流，不得用于任何商业用途的范围，用户应自觉遵守著作权法及其他相关法律的规定，不得侵犯本网站及权利人的合法权利， 给放牛娃TV和任何第三方造成损失的，侵权用户应负全部责任。<br>
+                2、放牛娃TV鼓励用户对网站上的作品进行全面监督，当版权拥有者提出侵权指控并出示充分的版权证明材料时，放牛娃TV会在第一时间对投诉举报进行核实，并及时清理侵权作品。放牛娃TV不承担因侵权指控带来损害的赔偿责任。<br>
+                3、本站所发评论言论仅代表网友自己，不代表本站观点，当用户的言论和行为侵犯了第三方的著作权或其他权利，责任在于用户本人，放牛娃TV不承担任何法律责任。在放牛娃TV发表言论的网友，我们认为用户已经知道并理解这一声明。<br>
+                4、未经放牛娃TV许可，任何人不得盗链放牛娃TV下载资源；不得复制或仿造本站或者在非放牛娃TV所属服务器上建立镜像，放牛娃TV的标识、源代码、及所有页面的版式设计等，版权归放牛娃TV所有。未经授权，不得用于除放牛娃TV之外的任何站点。放牛娃TV认为，一切用户在进入放牛娃TV主页及各分页时已经仔细看过本协议以上条款并完全同意，敬请谅解！<br>
+            <h4><b>版权投诉举报通道</b></h4>
+            QQ：<b>981598436 </b>(周一至周五 9:30—18:00)<br>
+            邮箱：hellohuxu@qq.com<br>
+            在线反馈：<a href="feedback.html">点击此处提交</a><br>
+        </div>
+
+        <div class="page-header" style="padding-top:10px">
+            <h3>郑重声明</h3>
+        </div>
+        <div class="tj">
+            <p>
+                1、用户承诺遵守国家的法律法规及部门规章。<br>
+                2、用户承诺播放资源必须合法内容及无版权纠纷内容。<br>
+                3、禁止播放封建迷信、淫秽、色情、赌博、暴力、凶杀、恐怖、教唆犯罪的的视频<br>
+                4、本站所有接口均来至互联网仅提供本地测试使用，请勿用于任何商业用途，否则后果自负。<br>
+                5、本站仅提供在线播放服务，不参与录制、上传，且不储存任何资源，仅提供资源引用和分享。<br>
+                6、若无意中侵犯到您的版权利益,敬请联系我们,我们将及时进行处理，并致以最深的歉意。<br>
+                7、本站不会对其內容负任何责任。 请尊重各个视频网站的知识产权，如因使用不当造成的侵权行为，请使用者自行承担！<br>
+                8、放牛娃TV认为，一切用户在进入放牛娃TV主页及各分页时已经仔细看过本协议条款并完全同意，敬请谅解！<br>
+                9、本站提供的最新电影和电视剧资源均系收集于各大视频网站,本站只提供web页面服务,并不提供影片资源存储,也不参与录制、上传,
+                若本站收录的节目无意侵犯了贵司版权，请给邮箱地址来信,我们会及时处理和回复,谢谢。</p>
+        </div>
+    </div>
+</div>
+<!--end主体-->
+
+<!-- start底部-->
+<nav class="foot navbar-inverse navbar-fixed-bottom">
+    <ul class="list-inline">
+        <li class="footer-ss"><a href="copyright.html" target="_blank">版权声明</a></li>
+        <li class="footer-ss"><a href="feedback.html" target="_blank">在线反馈</a></li>
+        <li class="footer-ss"><a href="cooperation.html" target="_blank">广告合作</a></li>
+        <!--<li class="footer-ss">帮助中心</li>-->
+        <li class="footer-ss">放牛娃TV所有视频均来自各大视频网站播放，本站不提供任何视听上传服务，如有异议请与我们取得联系。</li>
+        <li>Copyright © 2015-2017 FNW-TV Version 3.0.0. 备案号:<a href="http://www.miitbeian.gov.cn/" target="_blank"
+                                                               rel="nofollow">深ICP备XXXXXXX号-1</a></li>
+    </ul>
+    <ul class="list-inline text-right">
+        <li>
+        </li>
+    </ul>
+</nav>
+<!--end底部-->
+
+<!-- start悬浮 -->
+<div class="itop" style="display: block;"></div>
+<!-- end悬浮 -->
+
+<!-- start背景  -->
+<div id="pfk">
+    <div class="pfys"><i class="fa fa-cog " aria-hidden="true"></i><a class="pfysA pfy1" name="#222222"></a><a class="pfysA pfy2" name="#f4f4f4"></a></div>
+</div>
+<!-- end背景  -->
+
+<script src="tv/js/hm.js"></script>
+<script src="layui/layui.js"></script>
+<script src="common/js/canvas-particle.js"></script>
+<script src="tv/js/m.js"></script>
+<script type="text/javascript" src="tv/js/shCore.js"></script>
+<script type="text/javascript" src="tv/js/shBrushXml.js"></script>
+<script type="text/javascript">SyntaxHighlighter.highlight();</script>
+<script src="swiper/js/swiper.min.js"></script>
+<script src="tv/js/pifu.js"></script>
+<script type="text/javascript" src="common/js/common.js"></script>
+
+</body>
+</html>

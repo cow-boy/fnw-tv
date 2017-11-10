@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes=FnwTvGrapApplication.class)
 public class FnwTvGrapApplicationTests {
 
 	@Autowired
@@ -21,7 +21,6 @@ public class FnwTvGrapApplicationTests {
 
 	@Test
 	public void test() {
-		System.out.println("");
 		grabHotMatch.getData();
 	}
 

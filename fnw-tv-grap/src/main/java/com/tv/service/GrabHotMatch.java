@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
@@ -38,7 +39,7 @@ public class GrabHotMatch {
         try {
             Document doc = Jsoup.connect(zhibo8_url).timeout(10000).get();
             Elements elements = doc.select(".schedule_container .box");
-            List<HotMatch> list = new ArrayList<>();
+            List<HotMatch> list = new ArrayList<HotMatch>();
             //获取迭代器
             Iterator it = elements.iterator();
             while(it.hasNext()) {
@@ -86,11 +87,11 @@ public class GrabHotMatch {
                     hm.setGuestPic(guestPic);
                     hm.setTitle(title);
                     hm.setMatchType(matchType);
+                    hm.setHTime(hTime);
                     list.add(hm);
-                    System.out.println("对象： "+matchType+ "   "+hTime +"    "+ title+ "    "+label+"  "+id+"   "+dataTime+"  "+homeTeam+"   "+guestTeam+"   "+homePic+"  "+guestPic);
+                    //System.out.println("对象： "+matchType+ "   hTime:"+hTime +"    "+ title+ "    "+label+"  "+id+"   "+dataTime+"  "+homeTeam+"   "+guestTeam+"   "+homePic+"  "+guestPic);
                 }
             }
-            System.out.println(list);
             grabMatchDao.addHotMatch(list);
 
         } catch (IOException e) {
