@@ -20,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.concurrent.TimeUnit;
 
 
@@ -41,19 +42,19 @@ public class SportsProviderImpl implements SportsProvider {
     private SportsDao sportsDao;
 
     @Override
-    public Object selSportsList() {
+    public Map<String, List<HotMatch>> selSportsList() {
         String key = KeyPre.KEY_SPORTS;
         List<HotMatch> list = cacheTemplateService.findSetCache(key, 6, TimeUnit.HOURS, new TypeReference<List<HotMatch>>(){
         }, () -> {
             List<HotMatch> hotMatches = sportsDao.selSportsList();
-            for (HotMatch mt : hotMatches) {
-                List<Lines> line = sportsDao.selLineList(mt.getId());
-                mt.setLines(line);
-            }
+            hotMatches.forEach(hotMatch -> {
+                List<Lines> line = sportsDao.selLineList(hotMatch.getId());
+                hotMatch.setLines(line);
+            });
             return hotMatches;
         });
         Map<String, List<HotMatch>> map = new HashMap<>();
         Group2Map.listGroup2Map(list, map, HotMatch.class, "hTime");
-        return JSON.toJSON(map);
+        return map;
     }
 }

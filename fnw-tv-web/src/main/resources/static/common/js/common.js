@@ -84,3 +84,16 @@ function Dictionary(){
         return this.data.length;
     };
 }
+
+function getElementsByClassName(clsName, tagName,flag) {
+    var selElements = document.getElementsByTagName(tagName);
+    for (var i = 0; i < selElements.length; i++) {
+        if (selElements[i].className.indexOf(clsName) != -1) {
+            if(!flag){
+                selElements[i].style.display='none';
+            }else{
+                selElements[i].style.display ='';
+            }
+        }
+    }
+}
