@@ -7504,4 +7504,12 @@ body {
     margin-top: -1px;
     padding-right: 15px;
     font-size: 12px;
+    padding-left:15px;
+}
+
+.course-tool-bar .tool-left a {
+    margin: 0 12px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #787d82;
 }
