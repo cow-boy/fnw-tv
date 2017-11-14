@@ -1296,7 +1296,7 @@ a:active, a:hover {
 .footer_logo {
     display: none;
     float: left;
-    background: url(/static/img/common/footer-sprite.png) 0 -230px no-repeat;
+    background: url(../img/common/footer-sprite.png) 0 -230px no-repeat;
     height: 40px;
     width: 120px;
     margin: 0 20px
@@ -1316,9 +1316,9 @@ a:active, a:hover {
     position: relative;
     width: 32px;
     height: 32px;
-    background-image: url(/static/img/common/footer-sprite.png);
+    background-image: url(../img/common/footer-sprite.png);
     background-repeat: no-repeat;
-    margin: 3px 6px 0;
+    margin: 13px 6px 0;
     opacity: .5;
     filter: alpha(opacity=50);
     -webkit-transition: opacity .2s;
@@ -1339,7 +1339,7 @@ a:active, a:hover {
     height: 220px;
     left: -69px;
     bottom: 35px;
-    background: url(/static/img/common/footer-sprite.png?1) no-repeat
+    background: url(../img/common/footer-sprite.png?1) no-repeat
 }
 
 .followus .followus-weixin {
@@ -6234,9 +6234,9 @@ p {
     color: #4d555d
 }
 
-.recomment-box {
+/*.recomment-box {
     padding: 36px 0 48px 48px
-}
+}*/
 
 .recomment-box a {
     display: block;
@@ -6253,31 +6253,32 @@ p {
 }
 
 .recomment-box .banner-course-card {
-    width: 312px;
+    /*width: 312px;
     height: 60px;
-    margin-right: 48px;
-    margin-bottom: 36px
+    margin-right: 48px;*/
+    margin-bottom: 10px
 }
 
 .recomment-box .banner-course-card img {
     width: 64px;
-    height: 42px;
+    height: 62px;
     border-radius: 4px;
     background-color: #ccc
 }
 
 .recomment-box .banner-course-card .course-card {
-    margin-left: 16px
+    margin-left: 10px
 }
 
 .recomment-box .banner-course-card .course-card-name {
-    width: 232px;
+    width: 138px;
     font-size: 12px;
     color: #07111B;
     line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
+    padding-right:5px;
 }
 
 .recomment-box .banner-course-card .course-card-info, .recomment-box .banner-course-card .course-card-price {
@@ -7324,7 +7325,7 @@ body {
 }
 
 .container-types li {
-    margin-bottom: 16px
+    margin-bottom: 1px
 }
 
 .container-types li:last-child {
@@ -7495,6 +7496,8 @@ body {
     width:auto;
 }
 
+/*sports*/
+
 .course-tool-bar {
     position: relative;
     /*padding-top: 26px;*/
@@ -7513,3 +7516,55 @@ body {
     font-size: 14px;
     color: #787d82;
 }
+
+.recomment-box {
+    padding: 6px 0 18px 10px;
+    overflow: hidden;
+}
+
+/*sprotvt详情页*/
+.titletv{
+    position: relative;
+    height: 54px;
+    line-height:54px;
+    overflow: hidden;
+    width: 1152px;
+    margin: auto;
+}
+
+.titletv .titletv_left{
+    float:left;
+    width: 616px;
+    line-height: 54px;
+    padding-left: 10px;
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+    font-family: "microsoft yaHei", 微软雅黑, arial;
+}
+
+.titletv .titletv_bootom{
+    float:left;
+    line-height: 54px;
+    /*padding-left: 10px;*/
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+    font-family: "microsoft yaHei", 微软雅黑, arial;
+}
+/*
+.titletv .titletv_left_1{
+    float: right;
+}
+.titletv .titletv_right{
+    line-height: 54px;
+    padding-left: 30px;
+    float:left;
+}
+
+.titletv .titletv_right img{
+    width: 496px;
+    height:45px;
+}*/
