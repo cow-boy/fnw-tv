@@ -1,2 +1,3 @@
 $("#jiekouId").attr('src', 'm3u8.html');
-var parentCc = "http://live4.tdm.com.mo/ch3/definst//ch3.live/playlist.m3u8";
+
+var parentCc = "http://183.252.176.64//PLTV/88888888/224/3221225928/2.m3u8";

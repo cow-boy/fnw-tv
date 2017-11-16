@@ -22,10 +22,12 @@
     <link rel="apple-touch-icon" sizes="152x152" href="static/img/common/touch-icon-ipad-retina.png">
     <link rel="stylesheet" href="layui/css/layui.css" media="all">
     <link rel="stylesheet" href="css/common.css" type="text/css"/>
+    <link rel="stylesheet" href="css/index-less.css" type="text/css"/>
     <link rel="stylesheet" href="css/newcommons.css" type="text/css"/>
 
 </head>
 <body id="index">
+
 <div id="header">
     <div class="page-container" id="nav" style="">
         <div id="logo" class="logo"><a href="/" target="_self" title="首页"><img title="慕课网" src="img/logo_new.png"></a>
@@ -48,10 +50,10 @@
                 <a href="javascript:void(0);" target="_self">热点视频</a>
             </li>
             <li>
-                <a href="javascript:void(0);" target="_self">电视频道</a>
+                <a href="javascript:void(0);" class="active" target="_self">电视频道</a>
             </li>
             <li>
-                <a href="javascript:void(0);" class="active" target="_self">网络直播</a>
+                <a href="javascript:void(0);" target="_self">网络直播</a>
             </li>
             <li>
                 <a href="javascript:void(0);" target="_self">赞助我们</a>
@@ -82,85 +84,105 @@
 </div>
 
 <div id="main">
-    <div class="bg000">
 
-    </div>
+    <!-- top banner -->
+    <div class='program-banner'>
 
-    <div class="bgfff" style="margin-top: 10px;">
+        <div class='relative banner-head js-banner-head'>
 
-        <div class="g-banner pr" style="height: 600px !important;">
-            <div class="menuContent" style="height:600px !important;float: right !important;">
 
-            </div>
-            <div class="g-banner-content" style="height:600px !important;width: auto !important;">
-                <iframe id="jiekouId" name="jiekou" src=""
-                        width="916px;" height="600px" frameborder="no" border="0" marginwidth="0"
-                        marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+
+            <div class='js-other nav-item active' >
+                <h2 class='tit'>成长   因陪伴不再孤独</h2>
+                <div class="top-desc-box clearfix">
+                    <p class="desc-item big-desc-item">课程体系化</p>
+                    <em class="desc-line">/</em>
+                    <p class="desc-item">问答作业1V1</p>
+                    <em class="desc-line">/</em>
+                    <p class="desc-item">学练测一体</p>
+                    <em class="desc-line">/</em>
+                    <p class="desc-item">视频不限期</p>
+                    <em class="desc-line">/</em>
+                    <p class="desc-item big-desc-item">服务随开随用</p>
+                </div>
             </div>
         </div>
 
-        <div class="titletv">
-            <!--<div class="layui-form">-->
-                <div class="layui-inline">
-                    <select id="jkUrl" name="quiz1" class="jkClass">
-                        <option value="0">☆稳定播放</option>
-                        <option value="1">☆通用播放</option>
-                        <option value="2">☆万能播放</option>
-                        <option value="3">☆超级播放</option>
-                        <option value="4">☆无敌播放</option>
-                        <option value="5">☆牛逼播放</option>
-                        <option value="6">☆M3U8播放</option>
-                    </select>
-                </div>
-                <div class="layui-inline" style="width: 700px;">
-                    <input type="text" id="bfUrl" name="username" lay-verify="required" placeholder="输入(CTR+V)视频地址，如http://v.pptv.com/show/hxXnZMwyouBDwQ0.html" autocomplete="off" class="layui-input">
-                </div>
-                <div class="layui-inline">
-                    <button class="layui-btn layui-btn-normal" id="btnId">百搭按钮</button>
-                </div>
-            <!--</div>-->
+        <div class='tab-nav js-tabNav clearfix'>
+            <a href='/' data-type='all' class='navitem navitemall active'>
+                <i class='navicon all'></i>
+                <span class='navtext'>全部网络频道</span>
+                <div class='navbot'></div>
+            </a>
+
+            <a href='/?c=fe' data-type='fe' class='navitem '>
+                <span class="new-icon"></span>
+                <i class='navicon fe'></i>
+                <span class='navtext'>央视卫视</span>
+                <div class='navbot'></div>
+            </a>
+
+            <a href='/?c=java' data-type='java' class='navitem '>
+                <i class='navicon java'></i>
+                <span class='navtext'>港台频道</span>
+                <div class='navbot'></div>
+            </a>
+
+            <a href='/?c=android' data-type='android' class='navitem '>
+                <i class='navicon android'></i>
+                <span class='navtext'>海外在线</span>
+                <div class='navbot'></div>
+            </a>
+
+            <a href='/?c=php' data-type='php' class='navitem '>
+                <i class='navicon php'></i>
+                <span class='navtext'>体育科教</span>
+                <div class='navbot'></div>
+            </a>
+
+            <a href='/?c=ios' data-type='ios' class='navitem '>
+                <i class='navicon ios'></i>
+                <span class='navtext'>财经生活</span>
+                <div class='navbot'></div>
+            </a>
+
+            <a href='/?c=ios' data-type='ios' class='navitem '>
+                <i class='navicon ios'></i>
+                <span class='navtext'>NBA视频</span>
+                <div class='navbot'></div>
+            </a>
+
+            <a href='/?c=ios' data-type='ios' class='navitem '>
+                <i class='navicon ios'></i>
+                <span class='navtext'>足球视频</span>
+                <div class='navbot'></div>
+            </a>
         </div>
 
+        <div class='MMM'></div>
+        <div class='program-banner-wrap'>
+            <div class='program-banner-absolute'>
+                <div class='program-banner-bk'>
+                    <div class='svg-block image1'></div>
+                    <div class='svg-diamond image2'></div>
+                    <div class='svg-leaf image3'></div>
+                    <div class='svg-small-circle'></div>
+                    <div class='svg-big-circle'></div>
+                    <div class='svg-triangle image4'></div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
+    <!-- top banner end -->
 
     <div class="bgfff">
-        <div class='container-types clearfix'>
-            <h3 class='types-title'>
-                <span class="tit-icon icon-job-l tit-icon-l"></span>
-                <em>来</em>／<em>波</em>／<em>广</em>／<em>告</em>
-                <span class="tit-icon icon-job-r tit-icon-r">
-                </span>
+        <div class="container-types clearfix">
+            <h3 class="types-title">
+                <span class=""></span>
+                <span class="tit-icon icon-job-r tit-icon-r"></span>
             </h3>
-            <div class='clearfix types-content'>
-
-                <div class="adsense-box l"
-                     style="background: url(http://img.mukewang.com/5a0582a70001d3a605670108.jpg) no-repeat center center;background-size: 100%;">
-                    <a href="http://www.imooc.com/act/beatall?mc_marking=4910474ea30f70323acb51e56d27f004&amp;mc_channel=syzt1"
-                       data-track="xsrm-1-1" target="_blank">
-                        <h3 class="ellipsis">年度好赛事大轰趴</h3>
-                        <p class="ellipsis">瓜 / 分 / N / B / A / 11.11 / 千 / 万 / 券</p>
-                    </a>
-                </div>
-
-                <div class="adsense-box l"
-                     style="background: url(http://img.mukewang.com/59fc1e830001635805670108.jpg) no-repeat center center;background-size: 100%;">
-                    <a href="http://www.imooc.com/topic/xiaochengxu?mc_marking=6a13cf059236d3dec23a46c4963dafd3&amp;mc_channel=syzt2"
-                       data-track="xsrm-1-2" target="_blank">
-                        <h3 class="ellipsis">火爆微信小程序开发，只有实用，没有套路！</h3>
-                        <p class="ellipsis">0门槛搭建微信小程序，大步迈入微信&quot;小&quot;时代</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="bgfff">
-        <div class="container-types clearfix"><h3 class="types-title"><span
-                class="tit-icon icon-star-l tit-icon-l"></span><em>吊</em>／<em>炸</em>／<em>天</em>／<em>好</em>／<em>伙</em>／<em>伴</em>
-                <span class="tit-icon icon-job-r tit-icon-r">
-                    <a href='javascript:void(0);' class='types-title-more' target="_blank"><span>更多</span><i class='imv2-arrow2_r'></i></a>
-                </span>
-        </h3>
             <div class="in100">
                 <div class="col-lg-2 col-md-2 col-sm-4">
                     <div class="logos_lists">
@@ -415,7 +437,7 @@
 
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="layui/layui.js"></script>
-<script src="js/spttv.js"></script>
+
 
 </body>
 </html>
