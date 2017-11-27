@@ -1,0 +1,61 @@
+.container-types .adsense-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container-types .types-content {
+    margin-top: 10px;
+}
+
+.rightarea {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+.leftarea {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.layui-btn{
+    height: 32px;
+    line-height: 32px;
+}
+
+.xl_btn{
+    float: right;
+}
+
+.course-card-container{
+    height: 87px;
+    width: 160px;
+    margin: 10px;
+}
+
+.course-card-container .course-card-top{
+    width: 150px;
+    height: 88px;
+}
+
+.course-card-container .course-card-top .course-banner{
+    /*background-color:#2b333b;*/
+    /*width: 0px;*/
+}
+
+.course-card-container .course-card-top .course-banner .img-up{
+    left: 5px;
+    width: 153px;
+    height: 88px;
+}
+
+.menuContent{
+    width: 175px;
+    height:600px;
+    float: right;
+    overflow-y: auto;
+    overflow-x:hidden;
+    background: #5fb878;
+}

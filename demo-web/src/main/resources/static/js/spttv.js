@@ -1,3 +1,3 @@
 $("#jiekouId").attr('src', 'm3u8.html');
-
-var parentCc = "http://183.252.176.64//PLTV/88888888/224/3221225928/2.m3u8";
+alert(1);
+var parentCc = "http://v.edu.csdn.net/media/m3u8_new_tmp/5475/9b4f4455651ebb3b3bcbb8ecc1a3e25b-100476.m3u8";

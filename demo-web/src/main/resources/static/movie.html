@@ -20,6 +20,7 @@
     <link rel="apple-touch-icon" sizes="152x152" href="static/img/common/touch-icon-ipad-retina.png">
     <link rel="stylesheet" href="layui/css/layui.css"  media="all">
     <link rel="stylesheet" href="css/common.css" type="text/css"/>
+    <link rel="stylesheet" href="css/movie.css" type="text/css"/>
 
 </head>
 <body id="index">
@@ -36,10 +37,10 @@
                 <a href="javascript:void(0);" target="_self">注册</a>
             </li>
             <li>
-                <a href="/sport.html" class="active" target="_self">体育赛事</a>
+                <a href="/sport.html" target="_self">体育赛事</a>
             </li>
             <li>
-                <a href="/movie.html" target="_self">影视娱乐</a>
+                <a href="/movie.html" class="active" target="_self">影视娱乐</a>
             </li>
             <li>
                 <a href="javascript:void(0);" target="_self">热点视频</a>
@@ -80,45 +81,181 @@
 
 <div id="main">
 
+    <div class="wrap ">
+        <div class="top">
+            <div class="course-content">
+                <div class="course-nav-box">
+                    <div class="course-nav-row clearfix">
+                        <span class="hd l">时间：</span>
+                        <div class="bd">
+                            <ul class="">
+                                <li class="course-nav-item on">
+                                    <a href="http://www.imooc.com/course/list">全部</a>
+                                </li>
+                                <li class="course-nav-item
+                                    ">
+                                    <a href="http://www.imooc.com/course/list?c=fe" data-ct="fe">2017</a>
+                                </li>
+                                <li class="course-nav-item
+                                    ">
+                                    <a href="http://www.imooc.com/course/list?c=be" data-ct="be">2016</a>
+                                </li>
+                                <li class="course-nav-item
+                                    ">
+                                    <a href="http://www.imooc.com/course/list?c=mobile" data-ct="mobile">2015</a>
+                                </li>
+                                <li class="course-nav-item
+                                    ">
+                                    <a href="http://www.imooc.com/course/list?c=data" data-ct="data">2014</a>
+                                </li>
+                                <li class="course-nav-item
+                                    ">
+                                    <a href="http://www.imooc.com/course/list?c=cb" data-ct="cb">2013</a>
+                                </li>
+                                <li class="course-nav-item
+                                    ">
+                                    <a href="http://www.imooc.com/course/list?c=op" data-ct="op">2012</a>
+                                </li>
+                                <li class="course-nav-item
+                                    ">
+                                    <a href="http://www.imooc.com/course/list?c=photo" data-ct="photo">更早</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="course-nav-row clearfix">
+                        <span class="hd l">分类：</span>
+                        <div class="bd">
+                            <ul class="">
+                                <li class="course-nav-item on">
+                                    <a href="http://www.imooc.com/course/list?">全部</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=html" data-id="7" data-ct="html">武侠</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=javascript" data-id="44" data-ct="javascript">警匪</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=html5" data-id="221" data-ct="html5">犯罪</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=css3" data-id="1262" data-ct="css3">科幻</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=jquery" data-id="219" data-ct="jquery">战争</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=nodejs" data-id="222" data-ct="nodejs">恐怖</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=bootstrap" data-id="1263" data-ct="bootstrap">记录</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=angularjs" data-id="1123" data-ct="angularjs">西部</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=reactjs" data-id="1374" data-ct="reactjs">戏曲</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=vuejs" data-id="1423" data-ct="vuejs">歌舞</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=sassless" data-id="1429" data-ct="sassless">奇幻</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=webapp" data-id="1260" data-ct="webapp">冒险</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=fetool" data-id="1261" data-ct="fetool">悬疑</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=php" data-id="1" data-ct="php">历史</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=java" data-id="220" data-ct="java">动作</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=springboot" data-id="4903" data-ct="springboot">传记</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=python" data-id="1118" data-ct="python">动画</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=c" data-id="1273" data-ct="c">喜剧</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=cplusplus" data-id="1331" data-ct="cplusplus">青春</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=go" data-id="1358" data-ct="go">家庭</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=csharp" data-id="1362" data-ct="csharp">伦理</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=ruby" data-id="3629" data-ct="ruby">综艺</a>
+                                </li>
+                                <li class="course-nav-item">
+                                    <a href="http://www.imooc.com/course/list?c=android" data-id="223" data-ct="android">体育</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="course-nav-row clearfix border_bottom_none">
+                        <span class="hd l">地区：</span>
+                        <div class="bd">
+                            <ul class="">
+                                <li class="course-nav-item on">
+                                    <a href="http://www.imooc.com/course/list?">全部</a>
+                                </li>
+                                <li class="course-nav-item ">
+                                    <a href="http://www.imooc.com/course/list?type=1">大陆</a>
+                                </li>
+                                <li class="course-nav-item ">
+                                    <a href="http://www.imooc.com/course/list?type=2">港台</a>
+                                </li>
+                                <li class="course-nav-item ">
+                                    <a href="http://www.imooc.com/course/list?type=3">欧美</a>
+                                </li>
+                                <li class="course-nav-item ">
+                                    <a href="http://www.imooc.com/course/list?type=6">印度</a>
+                                </li>
+                                <li class="course-nav-item ">
+                                    <a href="http://www.imooc.com/course/list?type=6">其他</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <div class="bgfff">
-        <div class='container-types clearfix'>
-            <h3 class='types-title'>
-                <span class="tit-icon icon-job-l tit-icon-l"></span>
-                <em>今</em>／<em>日</em>／<em>赛</em>／<em>事</em>
-            </h3>
-            <div class='clearfix types-content'>
-                <!-- 广告一 -->
-                <div class="adsense-box l"
-                     style="background: url(http://img.mukewang.com/5a0582a70001d3a605670108.jpg) no-repeat center center;background-size: 100%;">
-                    <a href="http://www.imooc.com/act/beatall?mc_marking=4910474ea30f70323acb51e56d27f004&amp;mc_channel=syzt1"
-                       data-track="xsrm-1-1" target="_blank">
-                        <h3 class="ellipsis">美国职业联赛火爆进行中</h3>
-                        <p class="ellipsis">瓜 / 分 / N / B / A / 11.11 / 千 / 万 / 券</p>
-                    </a>
-                </div>
-                <!-- 广告二 -->
-                <div class="adsense-box l"
-                     style="background: url(http://img.mukewang.com/59fc1e830001635805670108.jpg) no-repeat center center;background-size: 100%;">
-                    <a href="http://www.imooc.com/topic/xiaochengxu?mc_marking=6a13cf059236d3dec23a46c4963dafd3&amp;mc_channel=syzt2"
-                       data-track="xsrm-1-2" target="_blank">
-                        <h3 class="ellipsis">欧洲五大联赛全力爆发！</h3>
-                        <p class="ellipsis">0门槛搭建微信小程序，大步迈入微信&quot;小&quot;时代</p>
-                    </a>
-                </div>
+        <div class='container-types clearfix' id="movie_div_id">
+
+            <div class='clearfix types-content' id="movie_div_id_div">
 
                 <div class="course-tool-bar clearfix">
                     <div class="tool-left l">
                         <a href="#" class="sort-item active">全部</a>
-                        <a href="#" class="sort-item">热门</a>
-                        <a href="#" class="sort-item">篮球</a>
-                        <a href="#" class="sort-item">足球</a>
-                        <a href="#" class="sort-item">其他</a>
                     </div>
 
                     <div class="tool-right r">
+
                         <span class="tool-item total-num">
-                            今日共<b>21</b>个赛事
+                            共<b>789</b>个课程
                         </span>
+                        <span class="tool-item tool-pager">
+                                                        <span class="pager-num">
+                                <b class="pager-cur">2</b>/<em class="pager-total">32</em>
+                            </span>
+                                 <a href="http://www.imooc.com/course/list?page=1" class="pager-action pager-prev "><i class="icon-left2"></i></a>
+
+                                  <a href="http://www.imooc.com/course/list?page=3" class="pager-action pager-next"><i class="icon-right2"></i></a>
+                            </span>
                     </div>
                 </div>
 
@@ -872,579 +1009,10 @@
                         </div>
                     </a>
                 </div>
+
+                <div class="page"><a href="http://www.imooc.com/course/list?page=1">首页</a><a href="http://www.imooc.com/course/list?page=1">上一页</a><a class="text-page-tag" href="http://www.imooc.com/course/list?page=1">1</a><a href="javascript:void(0)" class="active text-page-tag">2</a><a class="text-page-tag" href="http://www.imooc.com/course/list?page=3">3</a><a class="text-page-tag" href="http://www.imooc.com/course/list?page=4">4</a><a class="text-page-tag" href="http://www.imooc.com/course/list?page=5">5</a><a class="text-page-tag" href="http://www.imooc.com/course/list?page=6">6</a><a class="text-page-tag" href="http://www.imooc.com/course/list?page=7">7</a><a href="http://www.imooc.com/course/list?page=3">下一页</a><a href="http://www.imooc.com/course/list?page=32">尾页</a></div>
             </div>
-        </div>
-    </div>
 
-    <div class="bg000">
-        <div class='container-types clearfix'>
-            <h3 class='types-title'>
-                <span class="tit-icon icon-skill-l tit-icon-l"></span>
-                <em>未</em>／<em>来</em>／<em>赛</em>／<em>事</em>
-            </h3>
-
-            <div class='clearfix types-content'>
-                <!-- 广告一 -->
-                <div class="adsense-box l"
-                     style="background: url(http://img.mukewang.com/5a0582a70001d3a605670108.jpg) no-repeat center center;background-size: 100%;">
-                    <a href="http://www.imooc.com/act/beatall?mc_marking=4910474ea30f70323acb51e56d27f004&amp;mc_channel=syzt1"
-                       data-track="xsrm-1-1" target="_blank">
-                        <h3 class="ellipsis">美国职业联赛火爆进行中</h3>
-                        <p class="ellipsis">瓜 / 分 / N / B / A / 11.11 / 千 / 万 / 券</p>
-                    </a>
-                </div>
-                <!-- 广告二 -->
-                <div class="adsense-box l"
-                     style="background: url(http://img.mukewang.com/59fc1e830001635805670108.jpg) no-repeat center center;background-size: 100%;">
-                    <a href="http://www.imooc.com/topic/xiaochengxu?mc_marking=6a13cf059236d3dec23a46c4963dafd3&amp;mc_channel=syzt2"
-                       data-track="xsrm-1-2" target="_blank">
-                        <h3 class="ellipsis">欧洲五大联赛全力爆发！</h3>
-                        <p class="ellipsis">0门槛搭建微信小程序，大步迈入微信&quot;小&quot;时代</p>
-                    </a>
-                </div>
-
-                <div class="course-tool-bar clearfix">
-                    <div class="tool-left l">
-                        <a href="#" class="sort-item active">全部</a>
-                        <a href="#" class="sort-item">热门</a>
-                        <a href="#" class="sort-item">篮球</a>
-                        <a href="#" class="sort-item">足球</a>
-                        <a href="#" class="sort-item">其他</a>
-                    </div>
-
-                    <div class="tool-right r">
-                        <span class="tool-item total-num">
-                            未来共<b>121</b>个赛事
-                        </span>
-                    </div>
-                </div>
-
-                <ul class="layui-timeline">
-                    <li class="layui-timeline-item">
-                        <i class="layui-icon layui-timeline-axis"></i>
-                        <div class="layui-timeline-content">
-                            <h3 class="layui-timeline-title">8月18日</h3>
-                            <div class="recomment-box">
-                                <div class="l banner-course-card">
-                                    <a href="http://class.imooc.com/sc/6?mc_marking=26f2b814793653c4ed7605605086eea4&amp;mc_channel=yidongkaifa1" target="_blank" title="零基础入门Android语法与界面" class="clearfix">
-                                        <img src="//climg.mukewang.com/585243df00014f2406000338.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <h3 class="course-card-name">火箭 - 骑士</h3>
-                                            <h3 class="course-card-name">篮球NBA 10:30</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://coding.imooc.com/class/147.html?mc_marking=feb2449af6f0b66c4addc66d8d1b440f&amp;mc_channel=yidongkaifa2" target="_blank" title="世预赛欧洲区附加赛次回合 意大利(0) VS 瑞典(1)" class="clearfix">
-                                        <img src="//img4.mukewang.com/szimg/59dc79420001530905400300.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">世预赛欧洲区附加赛次回合</h3>
-                                            <h3 class="course-card-name">意大利(0) - 瑞典(1)</h3>
-                                            <h3 class="course-card-name">其他 11:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://class.imooc.com/sc/17?mc_marking=bd2f4df89faa72b8ac79588a8414e240&amp;mc_channel=yidongkaifa3" target="_blank" title="Android进阶：网络与数据存储" class="clearfix">
-                                        <img src="//climg.mukewang.com/59030d4e0001807a06000338.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">足球友谊赛</h3>
-                                            <div class="course-card-info">
-                                                <span>科索沃 - 拉脱维亚</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>足球</span><span>10:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">斯诺克上海大师赛第一轮</h3>
-                                            <div class="course-card-info">
-                                                <span>伯顿 - 特朗普</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>其他</span><span>11:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">斯诺克上海大师赛第一轮</h3>
-                                            <div class="course-card-info">
-                                                <span>伯顿 - 特朗普</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>其他 11:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                    <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                    <div class="l course-card">
-                                        <h3 class="course-card-name">NFL</h3>
-                                        <h3 class="course-card-name">迈阿密海豚 - 卡罗莱纳黑豹</h3>
-                                        <h3 class="course-card-name">其他 12:45</h3>
-                                    </div>
-                                </a>
-                            </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <div class="course-card-info">
-                                                <span>快船 - 76人</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>篮球 16:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">KHL</h3>
-                                            <h3 class="course-card-name">北京昆仑鸿星 - 莫斯科迪纳摩</h3>
-                                            <h3 class="course-card-name">其他 17:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <h3 class="course-card-name">篮网 - 凯尔特人</h3>
-                                            <h3 class="course-card-name">篮球 17:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://class.imooc.com/sc/6?mc_marking=26f2b814793653c4ed7605605086eea4&amp;mc_channel=yidongkaifa1" target="_blank" title="零基础入门Android语法与界面" class="clearfix">
-                                        <img src="//climg.mukewang.com/585243df00014f2406000338.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <h3 class="course-card-name">火箭 - 骑士</h3>
-                                            <h3 class="course-card-name">篮球NBA 10:30</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://class.imooc.com/sc/6?mc_marking=26f2b814793653c4ed7605605086eea4&amp;mc_channel=yidongkaifa1" target="_blank" title="零基础入门Android语法与界面" class="clearfix">
-                                        <img src="//climg.mukewang.com/585243df00014f2406000338.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <h3 class="course-card-name">火箭 - 骑士</h3>
-                                            <h3 class="course-card-name">篮球NBA 10:30</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://class.imooc.com/sc/6?mc_marking=26f2b814793653c4ed7605605086eea4&amp;mc_channel=yidongkaifa1" target="_blank" title="零基础入门Android语法与界面" class="clearfix">
-                                        <img src="//climg.mukewang.com/585243df00014f2406000338.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <h3 class="course-card-name">火箭 - 骑士</h3>
-                                            <h3 class="course-card-name">篮球NBA 10:30</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="layui-timeline-item">
-                        <i class="layui-icon layui-timeline-axis"></i>
-                        <div class="layui-timeline-content layui-text">
-                            <h3 class="layui-timeline-title">8月16日</h3>
-                            <div class="recomment-box">
-                                <div class="l banner-course-card">
-                                    <a href="http://class.imooc.com/sc/6?mc_marking=26f2b814793653c4ed7605605086eea4&amp;mc_channel=yidongkaifa1" target="_blank" title="零基础入门Android语法与界面" class="clearfix">
-                                        <img src="//climg.mukewang.com/585243df00014f2406000338.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <h3 class="course-card-name">火箭 - 骑士</h3>
-                                            <h3 class="course-card-name">篮球NBA 10:30</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://coding.imooc.com/class/147.html?mc_marking=feb2449af6f0b66c4addc66d8d1b440f&amp;mc_channel=yidongkaifa2" target="_blank" title="世预赛欧洲区附加赛次回合 意大利(0) VS 瑞典(1)" class="clearfix">
-                                        <img src="//img4.mukewang.com/szimg/59dc79420001530905400300.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">世预赛欧洲区附加赛次回合</h3>
-                                            <h3 class="course-card-name">意大利(0) - 瑞典(1)</h3>
-                                            <h3 class="course-card-name">其他 11:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://class.imooc.com/sc/17?mc_marking=bd2f4df89faa72b8ac79588a8414e240&amp;mc_channel=yidongkaifa3" target="_blank" title="Android进阶：网络与数据存储" class="clearfix">
-                                        <img src="//climg.mukewang.com/59030d4e0001807a06000338.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">足球友谊赛</h3>
-                                            <div class="course-card-info">
-                                                <span>科索沃 - 拉脱维亚</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>足球</span><span>10:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">斯诺克上海大师赛第一轮</h3>
-                                            <div class="course-card-info">
-                                                <span>伯顿 - 特朗普</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>其他</span><span>11:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">斯诺克上海大师赛第一轮</h3>
-                                            <div class="course-card-info">
-                                                <span>伯顿 - 特朗普</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>其他 11:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NFL</h3>
-                                            <h3 class="course-card-name">迈阿密海豚 - 卡罗莱纳黑豹</h3>
-                                            <h3 class="course-card-name">其他 12:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <div class="course-card-info">
-                                                <span>快船 - 76人</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>篮球 16:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">KHL</h3>
-                                            <h3 class="course-card-name">北京昆仑鸿星 - 莫斯科迪纳摩</h3>
-                                            <h3 class="course-card-name">其他 17:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <h3 class="course-card-name">篮网 - 凯尔特人</h3>
-                                            <h3 class="course-card-name">篮球 17:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://class.imooc.com/sc/6?mc_marking=26f2b814793653c4ed7605605086eea4&amp;mc_channel=yidongkaifa1" target="_blank" title="零基础入门Android语法与界面" class="clearfix">
-                                        <img src="//climg.mukewang.com/585243df00014f2406000338.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <h3 class="course-card-name">火箭 - 骑士</h3>
-                                            <h3 class="course-card-name">篮球NBA 10:30</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="layui-timeline-item">
-                        <i class="layui-icon layui-timeline-axis"></i>
-                        <div class="layui-timeline-content layui-text">
-                            <h3 class="layui-timeline-title">8月15日</h3>
-                            <div class="recomment-box">
-                                <div class="l banner-course-card">
-                                    <a href="http://class.imooc.com/sc/6?mc_marking=26f2b814793653c4ed7605605086eea4&amp;mc_channel=yidongkaifa1" target="_blank" title="零基础入门Android语法与界面" class="clearfix">
-                                        <img src="//climg.mukewang.com/585243df00014f2406000338.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <h3 class="course-card-name">火箭 - 骑士</h3>
-                                            <h3 class="course-card-name">篮球NBA 10:30</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://coding.imooc.com/class/147.html?mc_marking=feb2449af6f0b66c4addc66d8d1b440f&amp;mc_channel=yidongkaifa2" target="_blank" title="世预赛欧洲区附加赛次回合 意大利(0) VS 瑞典(1)" class="clearfix">
-                                        <img src="//img4.mukewang.com/szimg/59dc79420001530905400300.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">世预赛欧洲区附加赛次回合</h3>
-                                            <h3 class="course-card-name">意大利(0) - 瑞典(1)</h3>
-                                            <h3 class="course-card-name">其他 11:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://class.imooc.com/sc/17?mc_marking=bd2f4df89faa72b8ac79588a8414e240&amp;mc_channel=yidongkaifa3" target="_blank" title="Android进阶：网络与数据存储" class="clearfix">
-                                        <img src="//climg.mukewang.com/59030d4e0001807a06000338.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">足球友谊赛</h3>
-                                            <div class="course-card-info">
-                                                <span>科索沃 - 拉脱维亚</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>足球</span><span>10:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">斯诺克上海大师赛第一轮</h3>
-                                            <div class="course-card-info">
-                                                <span>伯顿 - 特朗普</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>其他</span><span>11:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">斯诺克上海大师赛第一轮</h3>
-                                            <div class="course-card-info">
-                                                <span>伯顿 - 特朗普</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>其他 11:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NFL</h3>
-                                            <h3 class="course-card-name">迈阿密海豚 - 卡罗莱纳黑豹</h3>
-                                            <h3 class="course-card-name">其他 12:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <div class="course-card-info">
-                                                <span>快船 - 76人</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>篮球 16:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">KHL</h3>
-                                            <h3 class="course-card-name">北京昆仑鸿星 - 莫斯科迪纳摩</h3>
-                                            <h3 class="course-card-name">其他 17:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <h3 class="course-card-name">篮网 - 凯尔特人</h3>
-                                            <h3 class="course-card-name">篮球 17:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://class.imooc.com/sc/6?mc_marking=26f2b814793653c4ed7605605086eea4&amp;mc_channel=yidongkaifa1" target="_blank" title="零基础入门Android语法与界面" class="clearfix">
-                                        <img src="//climg.mukewang.com/585243df00014f2406000338.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <h3 class="course-card-name">火箭 - 骑士</h3>
-                                            <h3 class="course-card-name">篮球NBA 10:30</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://class.imooc.com/sc/6?mc_marking=26f2b814793653c4ed7605605086eea4&amp;mc_channel=yidongkaifa1" target="_blank" title="零基础入门Android语法与界面" class="clearfix">
-                                        <img src="//climg.mukewang.com/585243df00014f2406000338.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <h3 class="course-card-name">火箭 - 骑士</h3>
-                                            <h3 class="course-card-name">篮球NBA 10:30</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="layui-timeline-item">
-                        <i class="layui-icon layui-timeline-axis"></i>
-                        <div class="layui-timeline-content layui-text">
-                            <h3 class="layui-timeline-title">8月14日</h3>
-                            <div class="recomment-box">
-                                <div class="l banner-course-card">
-                                    <a href="http://class.imooc.com/sc/6?mc_marking=26f2b814793653c4ed7605605086eea4&amp;mc_channel=yidongkaifa1" target="_blank" title="零基础入门Android语法与界面" class="clearfix">
-                                        <img src="//climg.mukewang.com/585243df00014f2406000338.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <h3 class="course-card-name">火箭 - 骑士</h3>
-                                            <h3 class="course-card-name">篮球NBA 10:30</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://coding.imooc.com/class/147.html?mc_marking=feb2449af6f0b66c4addc66d8d1b440f&amp;mc_channel=yidongkaifa2" target="_blank" title="世预赛欧洲区附加赛次回合 意大利(0) VS 瑞典(1)" class="clearfix">
-                                        <img src="//img4.mukewang.com/szimg/59dc79420001530905400300.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">世预赛欧洲区附加赛次回合</h3>
-                                            <h3 class="course-card-name">意大利(0) - 瑞典(1)</h3>
-                                            <h3 class="course-card-name">其他 11:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://class.imooc.com/sc/17?mc_marking=bd2f4df89faa72b8ac79588a8414e240&amp;mc_channel=yidongkaifa3" target="_blank" title="Android进阶：网络与数据存储" class="clearfix">
-                                        <img src="//climg.mukewang.com/59030d4e0001807a06000338.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">足球友谊赛</h3>
-                                            <div class="course-card-info">
-                                                <span>科索沃 - 拉脱维亚</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>足球</span><span>10:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">斯诺克上海大师赛第一轮</h3>
-                                            <div class="course-card-info">
-                                                <span>伯顿 - 特朗普</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>其他</span><span>11:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">斯诺克上海大师赛第一轮</h3>
-                                            <div class="course-card-info">
-                                                <span>伯顿 - 特朗普</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>其他 11:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NFL</h3>
-                                            <h3 class="course-card-name">迈阿密海豚 - 卡罗莱纳黑豹</h3>
-                                            <h3 class="course-card-name">其他 12:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <div class="course-card-info">
-                                                <span>快船 - 76人</span>
-                                            </div>
-                                            <div class="course-card-info">
-                                                <span>篮球 16:45</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">KHL</h3>
-                                            <h3 class="course-card-name">北京昆仑鸿星 - 莫斯科迪纳摩</h3>
-                                            <h3 class="course-card-name">其他 17:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="l banner-course-card">
-                                    <a href="http://www.imooc.com/learn/831?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4" target="_blank" title="Android常用异常集及解决方案" class="clearfix">
-                                        <img src="//img3.mukewang.com/590a8c9400013c5406000338-240-135.jpg" class="l">
-                                        <div class="l course-card">
-                                            <h3 class="course-card-name">NBA常规赛</h3>
-                                            <h3 class="course-card-name">篮网 - 凯尔特人</h3>
-                                            <h3 class="course-card-name">篮球 17:45</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="layui-timeline-item">
-                        <i class="layui-icon layui-timeline-axis"></i>
-                        <div class="layui-timeline-content layui-text">
-                            <div class="layui-timeline-title">期待中</div>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
         </div>
     </div>
 
